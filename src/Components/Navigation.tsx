@@ -29,7 +29,7 @@ const Navigation = () => {
             backgroundColor: alpha(theme.palette.common.white, 0.25),
         },
         marginLeft: 0,
-        width: '100%',
+        width: '50%',
         [theme.breakpoints.up('sm')]: {
             marginLeft: theme.spacing(1),
             width: 'auto',
@@ -92,20 +92,20 @@ const Navigation = () => {
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
                                 height: '50px',
-                                width: '50px'
+                                width: '50px',
+                                margin: '0 auto'
                             }}
                         >
                             <img src={controller} alt="controller" />
                         </Typography>
 
-                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                        <Box sx={{ flexGrow: 1, color: "black", display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"
                                 aria-label="account of current user"
                                 aria-controls="menu-appbar"
                                 aria-haspopup="true"
                                 onClick={handleOpenNavMenu}
-                                color="inherit"
                             >
                                 <MenuIcon />
                             </IconButton>
@@ -127,58 +127,84 @@ const Navigation = () => {
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
-                               
-                                    <MenuItem onClick={handleCloseNavMenu}>
-                                        <Typography textAlign="center"></Typography>
-                                    </MenuItem>
-                               
+
+                                <MenuItem>
+                                    <NavLink
+                                        to='/'
+                                        onClick={handleCloseNavMenu}
+                                        className="MenuLinkStyles"
+                                    >
+                                        Home
+                                    </NavLink>
+                                </MenuItem>
+
+                                <MenuItem>
+                                    <NavLink
+                                        to='/games'
+                                        onClick={handleCloseNavMenu}
+                                        className="MenuLinkStyles"
+                                    >
+                                        Games
+                                    </NavLink>
+                                </MenuItem>
+
+                                <MenuItem>
+                                    <NavLink
+                                        to='/ranking'
+                                        onClick={handleCloseNavMenu}
+                                        className="MenuLinkStyles"
+                                    >
+                                        Ranking
+                                    </NavLink>
+                                </MenuItem>
+
                             </Menu>
                         </Box>
-                        
+
                         <Typography
                             variant="h5"
                             noWrap
                             component="a"
-                            href=""
+                            href="/"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'flex', md: 'none' },
-                                flexGrow: 1,
+                                flexGrow: 8,
                                 height: '50px',
                                 width: '50px',
                             }}
                         >
-                            <img src={controller} alt="controller" />
+                            <img src={controller} alt="controller" className='con' />
                         </Typography>
 
                         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                                <NavLink
-                                    to='/'
-                                    onClick={handleCloseNavMenu}
-                                    className="NavLinkStyles"
-                                >
-                                    Home
-                                </NavLink>
+                            <NavLink
+                                to='/'
+                                onClick={handleCloseNavMenu}
+                                className="NavLinkStyles"
+                            >
+                                Home
+                            </NavLink>
                         </Box>
 
                         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                                <NavLink
-                                    to='/games'
-                                    onClick={handleCloseNavMenu}
-                                    className="NavLinkStyles"
-                                >
-                                    Games
-                                </NavLink>
+                            <NavLink
+                                to='/games'
+                                onClick={handleCloseNavMenu}
+                                className="NavLinkStyles"
+                            >
+                                Games
+                            </NavLink>
                         </Box>
 
                         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                                <NavLink
-                                    to='/ranking'
-                                    onClick={handleCloseNavMenu}
-                                    className="NavLinkStyles"
-                                >
-                                   Ranking
-                                </NavLink>
+                            <NavLink
+                                to='/ranking'
+                                onClick={handleCloseNavMenu}
+                                className="NavLinkStyles"
+                            >
+                                Ranking
+                            </NavLink>
                         </Box>
 
                         <Box sx={{ flexGrow: 1 }}>
@@ -201,21 +227,22 @@ const Navigation = () => {
                             </Menu>
                         </Box>
 
-                        <Search style={{ background: '#ECECEC', color: 'black' }}>
+
+                        <Search className="searchContainer" style={{ background: '#ECECEC', color: 'black' }}>
                             <SearchIconWrapper>
                                 <SearchIcon />
                             </SearchIconWrapper>
                             <StyledInputBase
                                 placeholder="Search…"
                                 inputProps={{ 'aria-label': 'search' }}
-                                onChange={e=>test(e.target.value)}
-                                // onChange={(e) => setSearched(e.target.value)}
-                                // value={searched}
+                                onChange={e => test(e.target.value)}
+                            // onChange={(e) => setSearched(e.target.value)}
+                            // value={searched}
                             />
                         </Search>
 
-                        <Button style={{ border: 'solid gray 1px', color: 'black', marginLeft:'10px' }}>Login</Button>
-                        
+                        <Button className="logBtn" href='/login'
+                        >Login</Button>
 
                     </Toolbar>
                 </Container>
@@ -224,7 +251,7 @@ const Navigation = () => {
 
     }
 
-    return (<ResponsiveAppBar />)
+    return (<div className='navSpace'><ResponsiveAppBar /></div>)
 }
 
 export default Navigation
