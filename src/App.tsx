@@ -6,6 +6,7 @@ import Ranking from './Pages/Ranking';
 import Login from './Pages/Login';
 import Navigation from './Components/Navigation';
 import Footer from './Components/Footer';
+import DisplayGame from './Pages/DisplayGame';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/games" element={<Games />} />
           <Route path="/ranking" element={<Ranking />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/displaygame" element={<DisplayGame />} />
         </Routes>
         <Footer/>
       </BrowserRouter>

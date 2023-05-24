@@ -1,0 +1,63 @@
+.DisplayReviewContainer{
+    margin: 40px 0;
+    padding-left: 1%;
+    text-align: left;
+}
+
+.DisplayReviewTitle{
+    font-size: 1.9em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reviewImg{
+    flex-direction: column;
+    flex-basis: 30%;
+    max-height: 180px;
+    max-width: 250px;
+    border: solid rgb(200, 200, 200) 1px;
+}
+
+.contents{
+    flex-direction: column;
+    flex-basis: 60%;
+    height: inherit;
+    /* border: solid red 1px; */
+    padding: 0 20px;
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+.keepInlineDR{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 600;
+    /* border: solid red 1px; */
+    padding: 0  0 10px 0;
+}
+
+.description{
+    color: rgb(41, 41, 41);
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.leaveReview{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 10px 0;
+    text-decoration: underline;
+}

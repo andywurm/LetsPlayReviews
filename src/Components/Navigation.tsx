@@ -130,16 +130,6 @@ const Navigation = () => {
 
                                 <MenuItem>
                                     <NavLink
-                                        to='/'
-                                        onClick={handleCloseNavMenu}
-                                        className="MenuLinkStyles"
-                                    >
-                                        Home
-                                    </NavLink>
-                                </MenuItem>
-
-                                <MenuItem>
-                                    <NavLink
                                         to='/games'
                                         onClick={handleCloseNavMenu}
                                         className="MenuLinkStyles"
@@ -155,6 +145,16 @@ const Navigation = () => {
                                         className="MenuLinkStyles"
                                     >
                                         Ranking
+                                    </NavLink>
+                                </MenuItem>
+
+                                <MenuItem>
+                                    <NavLink
+                                        to='/login'
+                                        onClick={handleCloseNavMenu}
+                                        className="MenuLinkStyles"
+                                    >
+                                        Login
                                     </NavLink>
                                 </MenuItem>
 
