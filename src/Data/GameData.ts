@@ -32,7 +32,7 @@ const gamedata: GameData[] = [
     },
     {
         title: "Tears of The Kingdom",
-        imgs: ["totkpromo.jpg","totkLink.png","totkZelda.png","totkGanondorf.jpg"],
+        imgs: ["totkpromo.png","totkLink.png","totkZelda.png","totkGanondorf.jpg"],
         featured: true,
         featuredImg: "totk.jpg",
         release: "May 12, 2023",
