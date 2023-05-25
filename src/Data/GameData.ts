@@ -14,13 +14,13 @@ export interface GameData {
 const gamedata: GameData[] = [
     {
         title: "Omori",
-        imgs: ["hero.png","omori.jpg","OmoriMenu.png","OmoriFriends.png"],
+        imgs: ["hero.png", "omori.jpg", "OmoriMenu.png", "OmoriFriends.png"],
         featured: false,
         release: "December 25, 2020",
-        rating: 4,
+        rating: 4.5,
         description: "Explore a strange world full of colorful friends and foes. Navigate through the vibrant and the mundane in order to uncover a forgotten past. When the time comes, the path you’ve chosen will determine your fate... and perhaps the fate of others as well.",
         system: "PC",
-        tags: ["Story","Pixel", "Horror", "Psychological"],
+        tags: ["Story", "Pixel", "Horror", "Psychological"],
         reviews: [
             {
                 username: "GmRvwr20",
@@ -32,11 +32,11 @@ const gamedata: GameData[] = [
     },
     {
         title: "Tears of The Kingdom",
-        imgs: ["totkpromo.png","totkLink.png","totkZelda.png","totkGanondorf.jpg"],
+        imgs: ["totkpromo.png", "totkLink.png", "totkZelda.png", "totkGanondorf.jpg"],
         featured: true,
         featuredImg: "totk.jpg",
         release: "May 12, 2023",
-        rating: 4.7,
+        rating: 4.8,
         description: "Sequel to The Legend of Zelda: Breath of the Wild (2017), that takes place just after the events occurred in its predecessor.",
         system: "Nintendo Switch",
         tags: ["Adeventure", "Action", "Fantasy"],
@@ -51,7 +51,7 @@ const gamedata: GameData[] = [
     },
     {
         title: "Banjo Kazooie",
-        imgs: ["banjokazooie.png","grunty.png","gobisvalley.png","mumbotoken.jpg"],
+        imgs: ["banjokazooie.png", "grunty.png", "gobisvalley.png", "mumbotoken.jpg"],
         featured: false,
         release: "June 29, 1998",
         rating: 4.3,
@@ -62,7 +62,7 @@ const gamedata: GameData[] = [
     },
     {
         title: "Ocarina of Time",
-        imgs: ["ootpromo.jpg","linkshiek.png","ootsages.png","firetemple.png"],
+        imgs: ["ootpromo.jpg", "linkshiek.png", "ootsages.png", "firetemple.png"],
         featured: false,
         release: "November 21, 1998",
         rating: 4.9,
@@ -83,7 +83,94 @@ const gamedata: GameData[] = [
                 comment: "I'm very new to the Zelda series playing Ocarina of Time in 2019, I didn't get the nostalgia thing everyone else is saying about but this is still an incredible game and I ca see why it's said by most gamers to be the best game of all time."
             }
         ]
-    }
+    },
+    {
+        title: "Before Your Eyes",
+        imgs: ["beforeyoureyespromo.jpg", "byemom.png", "byechloe.jpg", "byegatekeeper.png"],
+        featured: false,
+        release: "April 8, 2021",
+        rating: 4.2,
+        description: "The recently deceased Benjamin Brynn is on his way to the afterlife. The player must interact with Brynn's memories through an eye-tracking webcam to progress, as the game reads and responds to the player's eye movement and blinking.",
+        system: "PC",
+        tags: ["Story", "Psychological"],
+        reviews: []
+    },
+    {
+        title: "Kingdom Hearts",
+        imgs: ["khpromo.jpg", "kh.jpg", "khkairi.png", "khsora.png"],
+        featured: false,
+        release: "March 28, 2002",
+        rating: 4.6,
+        description: "When his world is destroyed and his friends mysteriously disappear, a young boy named Sora is thrust into a quest to find his missing friends and prevent the armies of darkness from destroying many other worlds.",
+        system: "Playstation",
+        tags: ["Story", "Fantasy", "Action", "Adventure"],
+        reviews: [
+            {
+                username: "NotxLea",
+                date: "May 24, 2023",
+                userRating: 4.2,
+                comment: "Years in the making and hyped like crazy, Kingdom Hearts for the PlayStation 2 had me eagerly awaiting for months. Although not a big Disney fan, I salivated at the dream of seeing all the great Disney and SquareSoft characters together in one DVD game. When September 17, 2002 came, I ran out to get my copy and have been enthralled by this game's beauty, charm, and playability."
+            }
+        ]
+    },
+    {
+        title: "A Way Out",
+        imgs: ["awayoutpromo.jpg", "awoLeo.jpg", "awoVincent.jpg", "awotwo.jpg"],
+        featured: false,
+        release: "March 23, 2018",
+        rating: 4.1,
+        description: "Prison inmates Vincent and Leo initially clash, but after Vincent helps Leo win a fight, they warm up to each other and decide to escape together.",
+        system: "Playstation",
+        tags: ["Story", "Action", "Adventure"],
+        reviews: [
+            {
+                username: "NoFaceLuvr",
+                date: "May 23, 2023",
+                userRating: 5,
+                comment: "You'll find nearly everything in this game: action, escape from prison, family drama and a surprising ending!"
+            }
+        ]
+    },
+    {
+        title: "One Shot",
+        imgs: ["oneshotpromo.png", "oneshotboat.jpg", "oneshotgame.jpg", "nikopancakes.png"],
+        featured: false,
+        release: "December 8, 2016",
+        rating: 4,
+        description: "Summoned to a self contained digital universe, a young child with catlike features and eyes, waking up, learns about their role as 'the messiah'. And begins their journey, a pilgrimage, to restore the world's long dead sun.",
+        system: "PC",
+        tags: ["Story", "Adventure", "Puzzle"],
+        reviews: []
+    },
+    {
+        title: "Wind Waker",
+        imgs: ["windwakerpromo.jpg", "wwlink.png", "wwgame.png", "wwtetra.png"],
+        featured: false,
+        release: "December 13, 2002",
+        rating: 4.7,
+        description: "After his sister gets kidnapped from their peaceful island, a young boy aims to emulate the Hero of Time by saving her.",
+        system: "GameCube",
+        tags: ["Action", "Adventure"],
+        reviews: [
+            {
+                username: "K!ngDaph3z",
+                date: "May 21, 2023",
+                userRating: 5,
+                comment: "This was the first real zelda game I ever played, and I love it with all my heart. This game has no flaws, and is great for beginners to the zelda series. Spoiler warning: My god. The ending is so violent for such a cartoony game, I gasped when I saw ganondorf's head get stabbed. Five out of five stars."
+            }
+        ]
+    },
+    {
+        title: "Super Princess Peach",
+        imgs: ["superprincesspeachpromo.jpg", "sppgame.png", "spphappy.png", "sppemotions.png"],
+        featured: false,
+        release: "May 26, 2006",
+        rating: 3.5,
+        description: " The nefarious Bowser and his koopa horde plotting a diabolical scheme to capture the famous defenders of the Mushroom Kingdom, Mario and Luigi. The plan is successful, and with Mario and Luigi out of the picture, who else is going to save the day but Peach? Join Peach as she makes her way to a showdown with Bowser and the rescue of the plumbing pair. ",
+        system: "Nintendo DS",
+        tags: ["Action", "Adventure"],
+        reviews: []
+    },
 
 ]
 

@@ -21,7 +21,9 @@ const DisplayReview = (props: IPropsDisplayReview) => {
                         <div className="contents">
                             <div className="keepInlineDR">Rating: <DisplayRating rating={game.rating} /></div>
 
-                            <div className="description">{game.description}</div>
+                            <div className="description">
+                                <p className="desc">{game.description}</p>
+                                </div>
 
                             <div className="leaveReview">Leave a Review</div>
                         </div>

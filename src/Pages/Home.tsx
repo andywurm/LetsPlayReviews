@@ -5,11 +5,13 @@ import { useEffect, useState } from 'react'
 import DisplayRating from '../Components/DisplayRating'
 import topArrow from '../LPRimg/up-arrow.png'
 import DisplayReview from '../Components/DisplayReview'
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
 
     const [topGames, setTopGames] = useState<GameData[]>([])
     const [featured, setFeatured] = useState<GameData>()
+    const navigate = useNavigate();
 
     useEffect(() => {
 
@@ -20,7 +22,7 @@ const Home = () => {
         })
 
         let sorted = games.sort((a, b) => b.rating - a.rating)
-        setTopGames(sorted.slice(0, 9))
+        setTopGames(sorted.slice(0, 10))
 
     }, [])
 
@@ -59,7 +61,7 @@ const Home = () => {
                 <DisplayReview GameData={topGames} />
             </div>
 
-            <div className='more'>
+            <div className='more' onClick={() => navigate('/ranking')}>
                 Click Here for the Full List
             </div>
 
