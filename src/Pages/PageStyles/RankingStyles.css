@@ -1,0 +1,38 @@
+.rankingContainer{
+    width: 75%;
+    margin: 50px auto;
+}
+
+.expand{
+    color: rgb(67, 67, 67);
+    padding: 15px;
+    border:  solid 2px rgba(145, 145, 145, 0.476);
+}
+
+.expandImg{
+    height: 25px;
+    width: 25px;
+}
+
+.expandImg:hover{
+    color:lightgray;
+    transform: scale(1.02);
+}
+
+.rankingTitle{
+    width: 100%;
+    text-align: left;
+    font-size: 2.4em;
+    font-weight: 500;
+    /* border: solid red 1px; */
+    display: flex;
+    align-items: center;
+    margin: 0 0 50px 10px;
+}
+
+.trend{
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+    /* border: solid red 1px; */
+}
