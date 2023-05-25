@@ -1,5 +1,4 @@
 import {GameData} from "../Data/GameData"
-import flame from '../LPRimg/flame.png'
 import DisplayRating from '../Components/DisplayRating'
 
 interface IPropsFeaturedGames {
@@ -9,11 +8,7 @@ interface IPropsFeaturedGames {
 const FeaturedGames = (props: IPropsFeaturedGames) => {
   
     return (
-        <div className="feat">
-            <div className='featuredTitle'>
-                <img src={flame} alt="fire" className='fire' />
-                Featured
-            </div>
+        <div className="feat dr">
 
             <div className='featuredImgContainer'>
                 <img src={`../GameImg/${props.GameData?.featuredImg}`} alt='Featured Game' className='featuredImg' />

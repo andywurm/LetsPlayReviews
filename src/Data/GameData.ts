@@ -97,7 +97,7 @@ const gamedata: GameData[] = [
     },
     {
         title: "Kingdom Hearts",
-        imgs: ["khpromo.jpg", "kh.jpg", "khkairi.png", "khsora.png"],
+        imgs: ["khpromo.jpg", "kh.jpg", "khkairi.png", "khsora.jpg"],
         featured: false,
         release: "March 28, 2002",
         rating: 4.6,
@@ -166,7 +166,7 @@ const gamedata: GameData[] = [
         featured: false,
         release: "May 26, 2006",
         rating: 3.5,
-        description: "The nefarious Bowser and his koopa horde plotting a diabolical scheme to capture the famous defenders of the Mushroom Kingdom, Mario and Luigi. The plan is successful, and with Mario and Luigi out of the picture, who else is going to save the day but Peach? Join Peach as she makes her way to a showdown with Bowser and the rescue of the plumbing pair.",
+        description: "The  Bowser and his koopa horde are plottingto capture Mario and Luigi. The plan is successful, and with Mario and Luigi out of the picture, who else is going to save the day but Peach? Join Peach as she makes her way to a showdown with Bowser and the rescue of the plumbing pair.",
         system: "Nintendo DS",
         tags: ["Action", "Adventure"],
         reviews: []
@@ -178,7 +178,7 @@ const gamedata: GameData[] = [
         featuredImg: 'pikminfeat.png',
         release: "July 21, 2023",
         rating: 0,
-        description: "Meet Pikmin, small, plantlike creatures you can grow, pluck, command, and overpower your enemies with! These curious helpers come in different types—fire is no sweat for Red Pikmin and the brand-new Ice Pikmin can freeze enemies and the environment. Use your Pikmin’s miniature might (and a bit of strategy) to explore this mysterious planet.",
+        description: "Meet Pikmin, small, plantlike creatures you can grow, pluck, command, and overpower your enemies with! These curious helpers come in different types—fire is no sweat for Red Pikmin and the brand-new Ice Pikmin can freeze enemies and the environment. Use your Pikmin’s might to explore this mysterious planet.",
         system: "Nintendo Switch",
         tags: ["Adventure", "Puzzle"],
         reviews: []

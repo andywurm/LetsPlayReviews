@@ -5,11 +5,12 @@ import topArrow from '../LPRimg/up-arrow.png'
 import DisplayReview from '../Components/DisplayReview'
 import { useNavigate } from "react-router-dom";
 import FeaturedGames from '../Components/FeaturedGames'
+import flame from '../LPRimg/flame.png'
 
 const Home = () => {
 
     const [topGames, setTopGames] = useState<GameData[]>([])
-    const [featured, setFeatured] = useState<GameData[]>([]) 
+    const [featured, setFeatured] = useState<GameData[]>([])
     const [index, setIndex] = useState(0)
     const navigate = useNavigate();
 
@@ -20,24 +21,29 @@ const Home = () => {
         let sorted = games.sort((a, b) => b.rating - a.rating)
         setTopGames(sorted.slice(0, 10))
 
-    }, [featured])
+    }, [])
 
-    function changeFeature(){
-        if(index === featured.length-1){
+    function changeFeature() {
+        if (index === featured.length - 1) {
             setIndex(0)
         }
-        else{
-            setIndex(index+1)
+        else {
+            setIndex(index + 1)
         }
     }
 
-    setTimeout(changeFeature, 10000)
+    setTimeout(changeFeature, 7000)
 
     return (
 
         <div className="HomepageContainer">
 
-            <FeaturedGames GameData={featured[index]}/>
+<div className='featuredTitle'>
+                <img src={flame} alt="fire" className='fire' />
+                Featured
+            </div>
+            
+                <FeaturedGames GameData={featured[index]} />
 
             <div className='homepageBreak'></div>
 

@@ -1,0 +1,187 @@
+.DisplayGameContainer {
+    width: 77%;
+    margin: 5% auto;
+    /* border: solid red 1px; */
+    height: fit-content;
+}
+
+.GameTitle {
+    font-size: 2.9em;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+.GameContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    /* border: solid red 1px; */
+}
+
+.GamePromo {
+    flex-direction: column;
+    flex-basis: 45%;
+    /* border: solid red 1px; */
+    display: flex;
+    align-items: center;
+}
+
+.bigImgContainer {
+    display: flex;
+    align-items: center;
+    min-height: 370px;
+    max-height: 400px;
+    width: 100%;
+    justify-content: left;
+    /* border: solid red 1px; */
+}
+
+.bigGameImg {
+    width: 100%;
+    height: 100%;
+    /* max-width: fit-content; */
+    justify-content: center;
+    border: solid rgb(188, 188, 188) 1px;
+}
+
+.smlImgContainer {
+    margin-top: 4%;
+    display: flex;
+    width: 100%;
+    max-width: fit-content;
+    /* border: solid red 1px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.smallGameImg {
+    width: 25%;
+    height: 70px;
+    margin: 0 1%;
+    opacity: 50%;
+    border: solid rgb(188, 188, 188) 1px;
+}
+
+.smallGameImg:hover {
+    transform: scale(1.03);
+}
+
+.arrows:hover {
+    color: lightgray;
+}
+
+.GameInfo {
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-left: 2%;
+    height: initial;
+    /* margin-bottom: auto; */
+    /* border: solid red 1px; */
+    /* margin-top: 3%; */
+}
+
+/* .gameInfoContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    border: solid green 1px;
+} */
+
+.keepTogether {
+    margin-top: 30px;
+    align-items: center;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.ratingspace {
+    margin-right: 1%;
+}
+
+.ReleaseDate {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.released {
+    color: rgb(101, 101, 101);
+}
+
+.gameDesc {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: rgb(62, 62, 62);
+}
+
+.gameTags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.tagSpan {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.tags {
+    padding: 5px 10px;
+    border: solid gray 1px;
+    border-radius: 7px;
+    margin: 0 5px;
+}
+
+.tags:hover{
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width: 1100px) {
+    .GamePromo{
+        flex-basis: 100%;
+    }
+    .bigImgContainer{
+        width: fit-content;
+        max-height: fit-content;
+        /* border: solid red 1px; */
+    }
+    .bigGameImg{
+        height: 70%;
+        width: 100%;
+    }
+    .GameTitle{
+        font-size: 2.3em;
+        text-align: center;
+        /* border: solid red 1px; */
+        margin: -5% auto;
+    }
+    .GameInfo{
+        flex-basis: 100%;
+        width: 100%;
+        /* font-size: 1.1em; */
+    }
+    .DisplayGameContainer{
+        margin-top: 10%;
+    }
+    .smlImgContainer{
+        margin-top: -5%;
+    }
+    .gameTags{
+        overflow: scroll;
+    }
+    .smallGameImg {
+        width: 20%;
+        height: 80%;
+    }
+}

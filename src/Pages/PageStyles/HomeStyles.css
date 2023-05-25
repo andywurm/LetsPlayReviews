@@ -97,6 +97,19 @@
     border:  solid 1px rgb(180, 180, 180);
 }
 
+.dr{
+    animation: fadeIn 7s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    1% {opacity: .25;}
+    2% {opacity: .5;}
+    3.5% {opacity: .75;}
+    5% {opacity: 1;}
+    100% { opacity: 1; }
+  }
+
 @media only screen and (max-width: 930px) {
     .featuredInfo{
         flex-basis: 100%;
@@ -107,6 +120,9 @@
     }
     .sml{
         display: none;
+    }
+    .dr{
+        animation: none;
     }
 
 }
