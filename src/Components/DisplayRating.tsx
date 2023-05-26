@@ -6,7 +6,7 @@ interface IPropsDisplayRating{
 }
 const DisplayRating = (props: IPropsDisplayRating) => {
     return(
-            <Rating name="half-rating-read" value={props.rating ? props.rating : 0} precision={0.1} readOnly />
+            <Rating name="half-rating-read" style={{color:'#5566e6'}} value={props.rating ? props.rating : 0} precision={0.1} readOnly />
     )
 }
 export default DisplayRating
