@@ -34,7 +34,7 @@ const Ranking = () => {
             <DisplayReview GameData={topGames} />
 
             <div className="expand" onClick={increaseWindow}>
-                <img className="expandImg" src={more} alt="View More" />
+                <div className="expandImg">+ </div>
             </div>
 
         </div>
