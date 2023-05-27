@@ -30,7 +30,7 @@ const Ranking = () => {
                 <img className="trend" src={trending} alt="" />
                 Top 100 Games
             </div>
-
+    
             <DisplayReview GameData={topGames} />
 
             <div className="expand" onClick={increaseWindow}>
