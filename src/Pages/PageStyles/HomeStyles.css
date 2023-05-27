@@ -11,10 +11,11 @@
 .gameboy{
     flex-direction: column;
     flex-basis: 50%;
+    height: 100%;
+    width: 100%;
     /* border: solid blue 1px; */
     display: flex;
     align-items: flex-end;
-    justify-content: right;
     position: relative;
     left: -7%;
 }
@@ -55,9 +56,6 @@
     height: 100%;
     display:flex;
     justify-content:center;
-    align-content:center;
-    align-items:center;
-    
 }
 
 .bigText{
@@ -74,10 +72,6 @@
 .small{
     padding: 20px 0;
 }
-
-/* .centerText{
-    border: solid red 1px;
-} */
 
 .btn{
     color: rgb(71, 71, 71);
@@ -205,7 +199,7 @@
     100% { opacity: 1; }
   }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 950px) {
     .featuredInfo{
         flex-basis: 100%;
     }
@@ -218,6 +212,54 @@
     }
     .dr{
         animation: none;
+    }
+    .gameboyContainer{
+        /* border: solid red 1px; */
+        height: 85%;
+        width: 80%;
+        justify-content: center;
+        background-image: none;
+    }
+    .gameboy{
+        /* border: solid red 1px; */
+    }
+    .landing{
+        height: 40vh;
+    }
+
+    .smallText{
+        font-size: 1.3em;
+    }
+    .bigText{
+        font-size: 2.3em;
+    }
+    .gb{
+        background-image: linear-gradient(to bottom right, rgb(242, 213, 245), rgb(228, 236, 244));
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .gameboy{
+        display: none;
+    }
+    .HomeText{
+        flex-basis: 100%;
+        /* border: solid red 1px; */
+        width: 90%;
+        margin: 0 auto;
+    }
+    .landing{
+        display: inline-block;
+        flex-direction: none;
+        height: fit-content;
+        margin-top: 10%;
+    }
+    .smallText{
+        font-size: 1.3em;
+    }
+    .bigText{
+        font-size: 3.3em;
     }
 
 }

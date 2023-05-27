@@ -4,10 +4,15 @@
     text-align: left;
 }
 
+.DisplayReviewContainer:hover{
+    transform: scale(1.01);
+}
+
 .DisplayReviewTitle{
     font-size: 1.9em;
     font-weight: 500;
     margin-bottom: 20px;
+    color: rgb(35, 35, 35);
 }
 
 .contentContainer{
@@ -47,7 +52,7 @@
 }
 
 .description{
-    color: rgb(41, 41, 41);
+    color: rgb(67, 67, 67);
     text-overflow: ellipsis;
     display: flex;
     align-items: center;
@@ -67,6 +72,11 @@
     font-weight: 600;
     padding-bottom: 10px;
     text-decoration: underline;
+    width: fit-content;
+}
+
+.leaveReview:hover{
+    color: gray;
 }
 
 @media only screen and (max-width: 930px) {
