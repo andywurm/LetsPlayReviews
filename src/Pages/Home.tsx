@@ -12,7 +12,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        
+
         let sorted = games.sort((a, b) => b.rating - a.rating)
         setTopGames(sorted.slice(0, 10))
 
@@ -26,7 +26,7 @@ const Home = () => {
 
                 <div className='gameboy'>
                     <div className='gameboyContainer'>
-                        <img src={gbcolor} alt='' className='gb' />
+                            <img src={gbcolor} alt='' className='gb' />
                     </div>
                 </div>
 

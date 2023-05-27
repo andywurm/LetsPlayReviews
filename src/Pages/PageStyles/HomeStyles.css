@@ -1,7 +1,7 @@
 
 .landing{
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
     /* border: solid red 1px; */
     display: flex;
     flex-direction: row;
@@ -14,26 +14,37 @@
     /* border: solid blue 1px; */
     display: flex;
     align-items: flex-end;
+    justify-content: right;
     position: relative;
     left: -7%;
 }
 
 .gameboyContainer{
     height: 85%;
+    padding: 0 4%;
+    width: fit-content;
     /* border: solid red 1px; */
     margin-top: auto;
     margin-bottom: auto;
     align-items: center;
     display: flex;
+    background-image: linear-gradient(to bottom right, rgb(242, 213, 245), rgb(228, 236, 244));
+    border-radius: 3px;
 }
 
 .gb{
     height: inherit;
-    width: inherit;
+    width: fit-content;
+    position: relative;
+    top: -10px;
     /* border: solid red 1px; */
-    background-image: linear-gradient(to bottom right, rgb(242, 213, 245), rgb(220, 237, 255));
-    border-radius: 3px;
-    padding: 5% 0;
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 .HomeText{
