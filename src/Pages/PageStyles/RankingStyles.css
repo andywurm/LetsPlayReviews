@@ -22,12 +22,43 @@
 .rankingTitle{
     width: 100%;
     text-align: left;
-    font-size: 2.4em;
+    font-size: 1.2em;
     font-weight: 500;
     /* border: solid red 1px; */
     display: flex;
     align-items: center;
-    margin: 0 0 50px 10px;
+    /* margin: 0 0 50px 10px; */
+    padding-left: 2%;
+}
+
+.TitleSection{
+    font-size: 2.4em;
+    /* border: solid red 1px; */
+    display: flex;
+    height: 12vh;
+    margin-bottom: 50px;
+}
+
+.gold{
+    height: 90%;
+    /* border: solid red 1px; */
+    padding: 10px 40px;
+    background-image: linear-gradient(to bottom right, rgb(242, 213, 245), rgb(228, 236, 244));
+    border-radius: 4px;
+    margin-left: 1.5%;
+}
+
+.trophy{
+    height: inherit;
+    width: fit-content;
+    animation: floater 3s ease-in-out infinite;
+    /* border: solid red 1px; */
+}
+
+@keyframes floater{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 7px); }
+    100%   { transform: translate(0, -0px); }   
 }
 
 .trend{
@@ -35,4 +66,18 @@
     width: 50px;
     padding-right: 20px;
     /* border: solid red 1px; */
+}
+
+@media only screen and (max-width: 600px) {
+    .gold{
+        display: none;
+    }
+    .rankingTitle{
+        font-size: 1em;
+        margin: 0 auto;
+    }
+    .TitleSection{
+        height: fit-content;
+        margin-bottom: 20px;
+    }
 }

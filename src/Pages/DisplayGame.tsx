@@ -4,6 +4,7 @@ import './PageStyles/DisplayGameStyles.css'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import DisplayRating from '../Components/DisplayRating';
+import ReviewContainer from '../Components/ReviewContainer';
 
 const DisplayGame = () => {
 
@@ -79,8 +80,14 @@ const DisplayGame = () => {
 
                     </div>
 
+
+
                 </div>
 
+            </div>
+
+            <div className='ReviewsContainer'>
+                <ReviewContainer reviews={game.reviews}/>
             </div>
 
 

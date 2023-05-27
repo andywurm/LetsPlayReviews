@@ -78,6 +78,7 @@
     flex-basis: 50%;
     margin-left: 2%;
     height: initial;
+    overflow-y:auto;
     /* margin-bottom: auto; */
     /* border: solid red 1px; */
     /* margin-top: 3%; */
@@ -95,8 +96,11 @@
     margin-top: 30px;
     align-items: center;
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .ratingspace {
@@ -105,7 +109,7 @@
 
 .ReleaseDate {
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 500;
     margin-top: 20px;
 }
@@ -116,7 +120,7 @@
 
 .gameDesc {
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.15em;
     font-weight: 500;
     line-height: 1.5;
     margin-top: 20px;
@@ -132,7 +136,7 @@
 }
 
 .tagSpan {
-    font-size: 1.2em;
+    font-size: 1.15em;
     font-weight: 500;
 }
 
@@ -144,7 +148,13 @@
 }
 
 .tags:hover{
-    transform: scale(1.03);
+    background-color: rgb(237, 237, 237);
+}
+
+.ReviewsContainer{
+    /* border: solid red 1px; */
+    margin-top: 3%;
+    padding: 10px 0;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -178,7 +188,7 @@
         margin-top: -5%;
     }
     .gameTags{
-        overflow: scroll;
+        overflow: hidden;
     }
     .smallGameImg {
         width: 20%;

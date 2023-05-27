@@ -2,8 +2,9 @@ import { useEffect, useState } from "react"
 import games, { GameData } from "../Data/GameData"
 import DisplayReview from "../Components/DisplayReview"
 import './PageStyles/RankingStyles.css'
-import more from '../LPRimg/add.png'
-import trending from '../LPRimg/trending.png'
+// import more from '../LPRimg/add.png'
+// import trending from '../LPRimg/trending.png'
+import trophy from '../LPRimg/trophy.png'
 
 const Ranking = () => {
 
@@ -26,10 +27,19 @@ const Ranking = () => {
     return (
         <div className="rankingContainer">
 
-            <div className="rankingTitle">
+            {/* <div className="rankingTitle">
                 <img className="trend" src={trending} alt="" />
                 Top 100 Games
+            </div> */}
+
+            <div className="TitleSection">
+                <div className="gold">
+                    <img src={trophy} alt='' className="trophy"/>
+                </div>
+                <div className="rankingTitle">Top 100 Games</div>
             </div>
+
+            <div className='homepageBreak'></div>
     
             <DisplayReview GameData={topGames} />
 

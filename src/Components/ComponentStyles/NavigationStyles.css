@@ -1,9 +1,10 @@
 .NavLinkStyles{
-    padding: 0 30px;
+    padding: 0 35px;
     color: black; 
     display: block;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.2em
 }
 
 .NavLinkStyles:hover{
