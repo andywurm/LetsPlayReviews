@@ -26,7 +26,7 @@ const DisplayConsoles = () => {
                     <Typography> <div className="cat">Nintendo</div></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    Hellowowowowow
+                    Nintendo Consoles Here
                 </AccordionDetails>
             </Accordion>
 
@@ -39,7 +39,7 @@ const DisplayConsoles = () => {
                     <Typography> <div className="cat">Playstation</div></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    Hellowowowowow
+                    Playstation Consoles Here
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -51,7 +51,7 @@ const DisplayConsoles = () => {
                     <Typography> <div className="cat">PC</div></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    Hellowowowowow
+                    PC Here
                 </AccordionDetails>
             </Accordion>
 
