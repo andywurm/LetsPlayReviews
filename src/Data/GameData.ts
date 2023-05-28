@@ -1,8 +1,6 @@
 export interface GameData {
     title: string,
     imgs: string[],
-    featured: boolean,
-    featuredImg?: string
     release: string,
     rating: number,
     description: string,
@@ -15,7 +13,6 @@ const gamedata: GameData[] = [
     {
         title: "Omori",
         imgs: ["hero.png", "omori.jpg", "OmoriMenu.png", "OmoriFriends.png"],
-        featured: false,
         release: "December 25, 2020",
         rating: 4.5,
         description: "Explore a strange world full of colorful friends and foes. Navigate through the vibrant and the mundane in order to uncover a forgotten past. When the time comes, the path you’ve chosen will determine your fate... and perhaps the fate of others as well.",
@@ -33,8 +30,6 @@ const gamedata: GameData[] = [
     {
         title: "Tears of The Kingdom",
         imgs: ["totkpromo.png", "totkLink.png", "totkZelda.png", "totkGanondorf.jpg"],
-        featured: true,
-        featuredImg: "totk.jpg",
         release: "May 12, 2023",
         rating: 4.8,
         description: "Sequel to The Legend of Zelda: Breath of the Wild (2017), that takes place just after the events occurred in its predecessor.",
@@ -52,7 +47,6 @@ const gamedata: GameData[] = [
     {
         title: "Banjo Kazooie",
         imgs: ["banjokazooie.png", "grunty.png", "gobisvalley.png", "mumbotoken.jpg"],
-        featured: false,
         release: "June 29, 1998",
         rating: 4.3,
         description: "The witch Gruntilda has captured Banjo's beloved sister, intending to leech the girl's youth and beauty through black magic and mad science. Banjo and Kazooie set out across nine worlds to get her back.",
@@ -63,7 +57,6 @@ const gamedata: GameData[] = [
     {
         title: "Ocarina of Time",
         imgs: ["ootpromo.jpg", "linkshiek.png", "ootsages.png", "firetemple.png"],
-        featured: false,
         release: "November 21, 1998",
         rating: 4.9,
         description: "A young Kokiri boy discovers that his destiny is to free the Seven Sages and save the land of Hyrule from the treacherous sorcerer Ganondorf.",
@@ -87,7 +80,6 @@ const gamedata: GameData[] = [
     {
         title: "Before Your Eyes",
         imgs: ["beforeyoureyespromo.jpg", "byemom.png", "byechloe.jpg", "byegatekeeper.png"],
-        featured: false,
         release: "April 8, 2021",
         rating: 4.2,
         description: "The recently deceased Benjamin Brynn is on his way to the afterlife. The player must interact with Brynn's memories through an eye-tracking webcam to progress, as the game reads and responds to the player's eye movement and blinking.",
@@ -98,7 +90,6 @@ const gamedata: GameData[] = [
     {
         title: "Kingdom Hearts",
         imgs: ["khpromo.jpg", "kh.jpg", "khkairi.png", "khsora.jpg"],
-        featured: false,
         release: "March 28, 2002",
         rating: 4.6,
         description: "When his world is destroyed and his friends mysteriously disappear, a young boy named Sora is thrust into a quest to find his missing friends and prevent the armies of darkness from destroying many other worlds.",
@@ -116,11 +107,10 @@ const gamedata: GameData[] = [
     {
         title: "A Way Out",
         imgs: ["awayoutpromo.jpg", "awoLeo.jpg", "awoVincent.jpg", "awotwo.jpg"],
-        featured: false,
         release: "March 23, 2018",
         rating: 4.1,
         description: "Prison inmates Vincent and Leo initially clash, but after Vincent helps Leo win a fight, they warm up to each other and decide to escape together.",
-        system: "Playstation",
+        system: "Playstation 4",
         tags: ["Story", "Action", "Adventure"],
         reviews: [
             {
@@ -134,7 +124,6 @@ const gamedata: GameData[] = [
     {
         title: "One Shot",
         imgs: ["oneshotpromo.png", "oneshotboat.jpg", "oneshotgame.jpg", "nikopancakes.png"],
-        featured: false,
         release: "December 8, 2016",
         rating: 4,
         description: "Summoned to a self contained digital universe, a young child with catlike features and eyes, waking up, learns about their role as 'the messiah'. And begins their journey, a pilgrimage, to restore the world's long dead sun.",
@@ -145,7 +134,6 @@ const gamedata: GameData[] = [
     {
         title: "Wind Waker",
         imgs: ["windwakerpromo.jpg", "wwlink.png", "wwgame.png", "wwtetra.png"],
-        featured: false,
         release: "December 13, 2002",
         rating: 4.7,
         description: "After his sister gets kidnapped from their peaceful island, a young boy aims to emulate the Hero of Time by saving her.",
@@ -163,7 +151,6 @@ const gamedata: GameData[] = [
     {
         title: "Super Princess Peach",
         imgs: ["superprincesspeachpromo.jpg", "sppgame.png", "spphappy.png", "sppemotions.png"],
-        featured: false,
         release: "May 26, 2006",
         rating: 3.5,
         description: "The  Bowser and his koopa horde are plottingto capture Mario and Luigi. The plan is successful, and with Mario and Luigi out of the picture, who else is going to save the day but Peach? Join Peach as she makes her way to a showdown with Bowser and the rescue of the plumbing pair.",
@@ -174,8 +161,6 @@ const gamedata: GameData[] = [
     {
         title: "Pikmin 4",
         imgs: ["pikminpromo.jpg", "pmain.png", "pgame.png", "phunt.png"],
-        featured: true,
-        featuredImg: 'pikminfeat.png',
         release: "July 21, 2023",
         rating: 0,
         description: "Meet Pikmin, small, plantlike creatures you can grow, pluck, command, and overpower your enemies with! These curious helpers come in different types—fire is no sweat for Red Pikmin and the brand-new Ice Pikmin can freeze enemies and the environment. Use your Pikmin’s might to explore this mysterious planet.",
@@ -183,7 +168,53 @@ const gamedata: GameData[] = [
         tags: ["Adventure", "Puzzle"],
         reviews: []
     },
-
+    {
+        title: "Detroit: Become Human",
+        imgs: ["detroitpromo.jpg", "detroitmarkus.jpg", "detroitconnor.png", "detroitlady.png"],
+        release: "May 25, 2018",
+        rating: 4,
+        description: "Detroit: Become Human puts the destiny of both mankind and androids in your hands, taking you to a near future where machines have become more intelligent than humans.",
+        system: "Playstation 4",
+        tags: ["Story", "Action", "Adventure"],
+        reviews: [
+            {
+                username: "ConnurxHaynk",
+                date: "May 28, 2023",
+                userRating: 4.5,
+                comment: "One of the best story-driven games out there, if not THE best. Somehow, even if you make bad choices along the way and fail QTEs, the story doesn't become any worse, it's just different, but equally amazing"
+            }
+        ]
+    },
+    {
+        title: "Assassin's Creed: Brotherhood",
+        imgs: ["assassinscreedpromo.jpg", "acattack.jpg", "acstory.jpg", "acgame.png"],
+        release: "May 25, 2018",
+        rating: 4.2,
+        description: "Live and breathe as Ezio, a legendary Master Assassin, in his enduring struggle against the powerful Templar order.",
+        system: "Playstation 3",
+        tags: ["Story", "Action", "Adventure"],
+        reviews: []
+    },
+    {
+        title: "Spyro the Dragon",
+        imgs: ["spyropromo.jpg", "spyrogame.jpg", "spyroplay.jpg", "spyropower.jpg"],
+        release: "September 10, 1998",
+        rating: 4,
+        description: "A young cute purple dragon named Spyro sets out to free his dragon buddies, after they had fallen victim to the villainous Gnasty Gnorc, who has turned them into crystal statues.",
+        system: "Playstation 1",
+        tags: ["Action", "Adventure"],
+        reviews: []
+    },
+    {
+        title: "Sly 2: Band of Thieves",
+        imgs: ["sly2promo.png", "Sly2game.jpg", "sly2char.jpg", "Sly2main.jpg"],
+        release: "September 10, 1998",
+        rating: 4,
+        description: "Two years after defeating Clockwerk, Sly Cooper and his band of thieves must recover and destroy all of the stolen Clockwerk parts from a sinister organization before their old nemesis can return from the dead.",
+        system: "Playstation 2",
+        tags: ["Action", "Adventure", "Story"],
+        reviews: []
+    },
 ]
 
 export default gamedata

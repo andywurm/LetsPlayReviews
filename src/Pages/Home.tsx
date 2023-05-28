@@ -1,6 +1,6 @@
 import './PageStyles/HomeStyles.css'
 import games, { GameData } from '../Data/GameData'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import topArrow from '../LPRimg/up-arrow.png'
 import DisplayReview from '../Components/DisplayReview'
 import { useNavigate } from "react-router-dom";
@@ -17,7 +17,6 @@ const Home = () => {
         setTopGames(sorted.slice(0, 10))
 
     }, [])
-
 
     return (
         <div>

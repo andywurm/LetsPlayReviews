@@ -235,9 +235,9 @@ const Navigation = () => {
                             <StyledInputBase
                                 placeholder="Search…"
                                 inputProps={{ 'aria-label': 'search' }}
-                                onChange={e => test(e.target.value)}
-                            // onChange={(e) => setSearched(e.target.value)}
-                            // value={searched}
+                                // onChange={e => test(e.target.value)}
+                                onChange={(e) => setSearched(e.target.value)}
+                                // value={searched}
                             />
                         </Search>
 
