@@ -20,7 +20,7 @@ const ReviewComment = (props: IPropsReviewComment) => {
                         </div>
 
                         <div className="userRating keepTog">
-                            <DisplayRating rating={person.userRating} />
+                            <DisplayRating rating={person.userRating} size={"medium"} />
                         </div>
 
                         <div className="userComment">"{person.comment}"</div>

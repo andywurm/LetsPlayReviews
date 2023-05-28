@@ -1,0 +1,62 @@
+.SearchArea {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 0;
+}
+
+.br{
+    margin-top: 1%;
+}
+
+.GamingOptions {
+    /* border: solid red 1px; */
+    flex-direction: column;
+    flex-basis: 20%;
+    margin-top: 2%;
+}
+
+.filterText {
+    width: 75%;
+    text-align: left;
+    margin: 0 auto;
+    /* border: solid red 1px; */
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-bottom: 7%;
+}
+
+.Upper{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: .5% auto;
+    margin-bottom: 30px;
+    /* border: solid red 1px; */
+}
+
+.upperText{
+    flex-direction: column;
+    flex-basis: 50%;
+    font-size: 1.7em;
+    font-weight: 500;
+    text-align: left;
+    /* border: solid red 1px; */
+}
+.selectTool{
+    flex-direction: column;
+    flex-basis: 50%;
+    width: 40%;
+    text-align: right;
+    /* border: solid red 1px; */
+}
+
+.innerSelect{
+    width: 60%;
+}
+
+.DisplayResults {
+    /* border: solid red 1px; */
+    flex-direction: column;
+    flex-basis: 75%;
+    padding-left: 2%;
+}

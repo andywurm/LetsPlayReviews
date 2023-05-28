@@ -19,7 +19,7 @@ const DisplayReview = (props: IPropsDisplayReview) => {
                         <img src={`../GameImg/${game.imgs[0]}`} alt={game.title} className="reviewImg" />
 
                         <div className="contents">
-                            <div className="keepInlineDR">Rating: <DisplayRating rating={game.rating} /></div>
+                            <div className="keepInlineDR">Rating: <DisplayRating rating={game.rating} size={"medium"} /></div>
 
                             <div className="description">
                                 <p className="desc">{game.description}</p>

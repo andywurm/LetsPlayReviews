@@ -60,7 +60,7 @@ const DisplayGame = () => {
                     <div className='gameInfoContainer'>
 
                         <div className='keepTogether'>
-                            <span className='ratingspace'>Rating:</span> <DisplayRating rating={game.rating} />
+                            <span className='ratingspace'>Rating:</span> <DisplayRating rating={game.rating} size={"medium"} />
                         </div>
 
                         <div className='ReleaseDate'>
