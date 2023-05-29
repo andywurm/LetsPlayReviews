@@ -1,59 +1,53 @@
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import React from "react";
-import Typography from '@mui/material/Typography';
-import { AccordionDetails } from '@mui/material';
+import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 
 
 const DisplayConsoles = () => {
 
-    const [expanded, setExpanded] = React.useState<string | false>('panel1');
+    const criteria = [
+        'PC',
+        'Nintendo 64',
+        'Nintendo DS',
+        'Nintendo GameCube',
+        'Nintendo Wii',
+        'Nintendo Switch',
+        'Playstation',
+        'Playstation 2',
+        'Playstation 3',
+        'Playstation 4',
+    ]
 
-    const handleChange =
-        (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
-            setExpanded(newExpanded ? panel : false);
-        };
+    const categories = [
+        'Story',
+        'Puzzle',
+        'Action',
+        'Adventure',
+        'Comedy',
+        'Pixel',
+        'Horror',
+        'Psychological',
+        'Fantasy'
+    ]
+    categories.sort()
 
     return (
         <div>
-            <Accordion style={{ width: '100%' }} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                >
-                    <Typography> <div className="cat">Nintendo</div></Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    Nintendo Consoles Here
-                </AccordionDetails>
-            </Accordion>
+            <FormGroup>
+                {criteria.map(console => {
+                    return (
+                        <FormControlLabel control={<Checkbox/>} label={console} value={console} />
+                    )
+                })}
+            </FormGroup>
 
-            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                >
-                    <Typography> <div className="cat">Playstation</div></Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    Playstation Consoles Here
-                </AccordionDetails>
-            </Accordion>
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                >
-                    <Typography> <div className="cat">PC</div></Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    PC Here
-                </AccordionDetails>
-            </Accordion>
+            <div className="aBreak"></div>
+
+            <FormGroup>
+                {categories.map(cat => {
+                    return (
+                        <FormControlLabel control={<Checkbox/>} label={cat} value={cat} />
+                    )
+                })}
+            </FormGroup>
 
         </div>
     );

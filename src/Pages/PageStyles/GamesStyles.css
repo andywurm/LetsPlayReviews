@@ -8,11 +8,23 @@
     margin-top: 1%;
 }
 
+.aBreak{
+    background-color: rgb(224, 224, 224);
+    height: 2px;
+    margin: 10px 0;
+}
+
 .GamingOptions {
     /* border: solid red 1px; */
     flex-direction: column;
     flex-basis: 20%;
-    margin-top: 2%;
+    margin-top: 1%;
+}
+
+.searchContainer{
+    /* border: solid red 1px; */
+    width: 80%;
+    margin: 0 auto;
 }
 
 .filterText {

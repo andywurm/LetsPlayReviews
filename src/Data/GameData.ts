@@ -137,7 +137,7 @@ const gamedata: GameData[] = [
         release: "December 13, 2002",
         rating: 4.7,
         description: "After his sister gets kidnapped from their peaceful island, a young boy aims to emulate the Hero of Time by saving her.",
-        system: "GameCube",
+        system: "Nintendo GameCube",
         tags: ["Action", "Adventure"],
         reviews: [
             {
@@ -201,7 +201,7 @@ const gamedata: GameData[] = [
         release: "September 10, 1998",
         rating: 4,
         description: "A young cute purple dragon named Spyro sets out to free his dragon buddies, after they had fallen victim to the villainous Gnasty Gnorc, who has turned them into crystal statues.",
-        system: "Playstation 1",
+        system: "Playstation",
         tags: ["Action", "Adventure"],
         reviews: []
     },

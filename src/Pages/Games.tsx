@@ -10,15 +10,8 @@ import gameList from '../Data/GameData'
 
 const Games = () => {
 
-    const categories = ['Story', 'Puzzle', 'Action', 'Adventure', 'Comedy', 'Pixel', 'Horror', 'Psychological', 'Fantasy']
-    categories.sort()
     const [title, setTitle] = useState("ALL GAMES")
     const [games, setGames] = useState(gameList)
-    
-    function catSearch(event: SelectChangeEvent){
-        let str = event.target.value as string
-        setTitle(str.toUpperCase() + " GAMES")
-    }
 
     return (
         <div>
@@ -26,35 +19,20 @@ const Games = () => {
             <div className="SearchArea">
 
                 <div className="GamingOptions">
+                    
                     <div className="filterText">FILTERS</div>
                     <div className="homepageBreak"></div>
-                    <DisplayConsoles />
+
+                    <div className="searchContainer">
+                        <DisplayConsoles />
+                    </div>
+                    
                 </div>
 
                 <div className="DisplayResults">
 
                     <div className="Upper">
-
                         <div className="upperText">{title}</div>
-
-                        <div className="selectTool">
-                            <FormControl className="innerSelect">
-                                <InputLabel id="demo-simple-select-label">Categories</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    label="Categories"
-                                    onChange={catSearch}
-                                    style={{ height: '50px', textAlign: 'left' }}
-                                >
-                                    {categories.map(cat => {
-                                        return (<MenuItem value={cat}>{cat}</MenuItem>)
-                                    })
-                                    }
-                                </Select>
-                            </FormControl>
-                        </div>
-
                     </div>
 
                     <div>

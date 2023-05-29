@@ -15,10 +15,11 @@ import controller from '../LPRimg/3743230.png'
 import Button from '@mui/material/Button';
 import { NavLink } from 'react-router-dom';
 import './ComponentStyles/NavigationStyles.css'
+import { useState } from 'react';
 
 const Navigation = () => {
 
-    const [searched, setSearched] = React.useState("")
+    const [searched, setSearched] = useState("")
     console.log(searched)
 
     const Search = styled('div')(({ theme }) => ({
@@ -76,6 +77,8 @@ const Navigation = () => {
 
         function test(event: string) {
             console.log(event)
+            let str = event
+            // setSearched(str)
         }
 
         return (
@@ -227,7 +230,6 @@ const Navigation = () => {
                             </Menu>
                         </Box>
 
-
                         <Search className="searchContainer" style={{ background: '#ECECEC', color: 'black' }}>
                             <SearchIconWrapper>
                                 <SearchIcon />
@@ -235,9 +237,7 @@ const Navigation = () => {
                             <StyledInputBase
                                 placeholder="Search…"
                                 inputProps={{ 'aria-label': 'search' }}
-                                // onChange={e => test(e.target.value)}
-                                onChange={(e) => setSearched(e.target.value)}
-                                // value={searched}
+                                onChange={e => test(e.target.value)}
                             />
                         </Search>
 
