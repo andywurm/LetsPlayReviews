@@ -8,6 +8,14 @@
     margin-top: 1%;
 }
 
+.filterHeader{
+    /* border: solid red 1px; */
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
 .aBreak{
     background-color: rgb(224, 224, 224);
     height: 2px;

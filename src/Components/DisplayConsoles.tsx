@@ -31,6 +31,7 @@ const DisplayConsoles = () => {
 
     return (
         <div>
+            <div className="filterHeader">CONSOLES</div>
             <FormGroup>
                 {criteria.map(console => {
                     return (
@@ -40,7 +41,8 @@ const DisplayConsoles = () => {
             </FormGroup>
 
             <div className="aBreak"></div>
-
+            
+            <div className="filterHeader">GENRES</div>
             <FormGroup>
                 {categories.map(cat => {
                     return (
