@@ -27,8 +27,6 @@ const DisplayGame = () => {
         }
     }
 
-    console.log(index)
-
     return (
         <div className='DisplayGameContainer'>
 

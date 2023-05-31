@@ -1,10 +1,6 @@
 import DisplayConsoles from "../Components/DisplayConsoles"
 import GameCards from "../Components/GameCards"
 import './PageStyles/GamesStyles.css'
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { useState } from "react";
 import gameList from '../Data/GameData'
 
@@ -19,7 +15,7 @@ const Games = () => {
             <div className="SearchArea">
 
                 <div className="GamingOptions">
-                    
+
                     <div className="filterText">FILTERS</div>
                     <div className="homepageBreak"></div>
 

@@ -1,27 +1,30 @@
-import { ReactNode, createContext, useState} from "react";
-import { GameData } from "../Data/GameData";
-
+import { ReactNode, createContext, useState } from "react";
+import allGameData, { GameData } from "../Data/GameData";
 
 const GameContext = createContext<GameContextType>({
     data: {
         title: "string",
-            imgs: [],
-            release: "string",
-            rating: 0,
-            description: "string",
-            system: "string",
-            tags: [],
-            reviews: [] 
+        imgs: [],
+        release: "string",
+        rating: 0,
+        description: "string",
+        system: "string",
+        tags: [],
+        reviews: []
     },
-    setter: () => {}
+    setter: () => { },
+    getList: [],
+    setList: () => []
 })
 
 interface GameContextType {
     data: GameData
     setter: React.Dispatch<React.SetStateAction<GameData>>
+    getList: GameData[]
+    setList: React.Dispatch<React.SetStateAction<GameData[]>>
 }
 
-interface IPropsGameProvider{
+interface IPropsGameProvider {
     children: ReactNode
 }
 
@@ -36,16 +39,18 @@ const GameProvider = (props: IPropsGameProvider) => {
             description: "string",
             system: "string",
             tags: [],
-            reviews: [] 
+            reviews: []
         }
     );
 
-    return(
-        <GameContext.Provider value={{ data: gameClicked, setter: setGameClicked }}>
-         {props.children}
+    let [gameList, setList] = useState(allGameData)
+
+    return (
+        <GameContext.Provider value={{ data: gameClicked, setter: setGameClicked, getList: gameList, setList: setList }}>
+            {props.children}
         </GameContext.Provider>
     )
 }
 
 
-export {GameContext, GameProvider};
+export { GameContext, GameProvider };
