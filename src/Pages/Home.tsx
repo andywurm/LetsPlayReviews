@@ -1,22 +1,10 @@
 import './PageStyles/HomeStyles.css'
-import games, { GameData } from '../Data/GameData'
-import { useContext, useEffect, useState } from 'react'
-import topArrow from '../LPRimg/up-arrow.png'
-import DisplayReview from '../Components/DisplayReview'
-import { useNavigate } from "react-router-dom";
 import gbcolor from '../LPRimg/gbcolor.png'
+import game from '../LPRimg/gaming.png'
+import rate from '../LPRimg/rating.png'
+import comment from '../LPRimg/bubble-chat.png'
 
 const Home = () => {
-
-    const [topGames, setTopGames] = useState<GameData[]>([])
-    const navigate = useNavigate();
-
-    useEffect(() => {
-
-        let sorted = games.sort((a, b) => b.rating - a.rating)
-        setTopGames(sorted.slice(0, 10))
-
-    }, [])
 
     return (
         <div>
@@ -25,7 +13,7 @@ const Home = () => {
 
                 <div className='gameboy'>
                     <div className='gameboyContainer'>
-                            <img src={gbcolor} alt='' className='gb' />
+                        <img src={gbcolor} alt='' className='gb' />
                     </div>
                 </div>
 
@@ -58,18 +46,38 @@ const Home = () => {
 
                 <div className='homepageBreak'></div>
 
-                <div className='topTitle'>
-                    <img src={topArrow} alt='Arrow' className='topArrow' />
-                    Top Games
+                <div className='explain'>
+
+                    <div className='play'>
+                        <div className='keepOver'>
+                            <img src={game} alt='' className='explainIcon' />
+                        </div>
+                        <div className='hText'>
+                            The first step is to play a game of your choosing!
+                        </div>
+                    </div>
+
+                    <div className='rate'>
+                        <div className='keepOver'>
+                            <img src={rate} alt='' className='explainIcon' />
+                        </div>
+                        <div className='hText'>
+                            After completion, rate the game based on your experience.
+                        </div>
+                    </div>
+
+                    <div className='comment'>
+                        <div className='keepOver'>
+                            <img src={comment} alt='' className='explainIcon' />
+                        </div>
+                        <div className='hText'>
+                            Write a comment to further express your opinions!
+                        </div>
+                    </div>
+
                 </div>
 
-                <div>
-                    <DisplayReview GameData={topGames} />
-                </div>
-
-                <div className='more' onClick={() => navigate('/ranking')}>
-                    Click Here for the Full List
-                </div>
+                <div className='homepageBreak'></div>
 
             </div>
 
