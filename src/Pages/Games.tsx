@@ -1,13 +1,20 @@
 import DisplayConsoles from "../Components/DisplayConsoles"
 import GameCards from "../Components/GameCards"
 import './PageStyles/GamesStyles.css'
-import { useState } from "react";
-import gameList from '../Data/GameData'
+import { useContext, useEffect, useState } from "react";
+import { GameContext } from "../Context/GameContext";
+import { GameData } from "../Data/GameData";
 
 const Games = () => {
 
+    let gContext = useContext(GameContext)
+
     const [title, setTitle] = useState("ALL GAMES")
-    const [games, setGames] = useState(gameList)
+    const [games, setGames] = useState(gContext.getList)
+    const [displayList, setDisplayList] = useState<GameData[]>([])
+    const [filters, setFilters] = useState<string[]>([])
+
+    console.log(filters)
 
     return (
         <div>
@@ -20,9 +27,9 @@ const Games = () => {
                     <div className="homepageBreak"></div>
 
                     <div className="searchContainer">
-                        <DisplayConsoles />
+                        <DisplayConsoles filters={filters} setFilters={setFilters} />
                     </div>
-                    
+
                 </div>
 
                 <div className="DisplayResults">
@@ -32,7 +39,7 @@ const Games = () => {
                     </div>
 
                     <div>
-                        <GameCards gameList={games}/>
+                        <GameCards gameList={games} />
                     </div>
 
                 </div>
