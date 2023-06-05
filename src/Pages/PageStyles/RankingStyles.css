@@ -3,81 +3,78 @@
     margin: 50px auto;
 }
 
-.expand{
-    color: rgb(90, 90, 90);
-    padding: 8px;
-    border:  solid 2px rgba(145, 145, 145, 0.476);
-}
-
-.expandImg{
-    font-size: 2.5em;
-    color: rgb(157, 157, 157);
-}
-
-.expandImg:hover, .expand:hover{
-    color:rgb(142, 142, 142);
-    transform: scale(1.01);
+.actualRanking{
+    width: 75%;
+    margin: 0 auto
 }
 
 .rankingTitle{
-    width: 100%;
-    text-align: left;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size:2.5em;
+    font-weight: 600;
     /* border: solid red 1px; */
-    display: flex;
-    align-items: center;
-    /* margin: 0 0 50px 10px; */
-    padding-left: 2%;
 }
 
 .TitleSection{
-    font-size: 2.4em;
     /* border: solid red 1px; */
     display: flex;
-    height: 12vh;
-    margin-bottom: 50px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 
-.gold{
-    height: 90%;
+.rankingText{
+    flex-direction: column;
+    flex-basis: 40%;
+    text-align: center;
+    width: 60%;
     /* border: solid red 1px; */
-    padding: 10px 40px;
-    background-image: linear-gradient(to bottom right, rgb(242, 213, 245), rgb(228, 236, 244));
-    border-radius: 4px;
-    margin-left: 1.5%;
+    line-height: 1.5;
 }
 
-.trophy{
-    height: inherit;
-    width: fit-content;
-    animation: floater 3s ease-in-out infinite;
-    /* border: solid red 1px; */
+.rankingSmlText{
+    font-size: 1.3em;
+    color: rgb(96, 96, 96);
 }
 
-@keyframes floater{
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 7px); }
-    100%   { transform: translate(0, -0px); }   
-}
-
-.trend{
-    height: 50px;
-    width: 50px;
-    padding-right: 20px;
+.rankingImg{
+    flex-direction: column;
+    flex-basis: 60%;
+    display: flex;
+    justify-content: right;
     /* border: solid red 1px; */
 }
 
-@media only screen and (max-width: 600px) {
-    .gold{
-        display: none;
-    }
+.rImg{
+    width: 100%;
+    object-fit: cover;
+    /* border: solid red 1px; */
+}
+
+@media only screen and (max-width: 1050px) {
+   
     .rankingTitle{
-        font-size: 1em;
+        font-size: 2em;
         margin: 0 auto;
     }
+
+    .rankingText{
+        flex-basis: 100%;
+    }
+    .rankingSmlText{
+        font-size: 1em;
+    }
+
+    .rankingImg{
+        flex-basis: 100%;
+    }
+
     .TitleSection{
         height: fit-content;
         margin-bottom: 20px;
+    }
+
+    .actualRanking{
+        width: 85%;
+      
     }
 }

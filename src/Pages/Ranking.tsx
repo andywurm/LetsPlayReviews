@@ -4,7 +4,7 @@ import DisplayReview from "../Components/DisplayReview"
 import './PageStyles/RankingStyles.css'
 // import more from '../LPRimg/add.png'
 // import trending from '../LPRimg/trending.png'
-import trophy from '../LPRimg/trophy.png'
+import leaderboard from '../LPRimg/Leaderboard.png'
 
 const Ranking = () => {
 
@@ -25,27 +25,30 @@ const Ranking = () => {
     }
 
     return (
-        <div className="rankingContainer">
+        <div>
 
-            {/* <div className="rankingTitle">
-                <img className="trend" src={trending} alt="" />
-                Top 100 Games
-            </div> */}
+            <div className="rankingContainer">
 
-            <div className="TitleSection">
-                <div className="gold">
-                    <img src={trophy} alt='' className="trophy"/>
+                <div className="TitleSection">
+
+                    <div className="rankingText">
+                        <div className="rankingTitle"> Current Leaderboard</div>
+                        <div className="rankingSmlText">Current game ranking according to user reviews.</div>
+                    </div>
+                    <div className="rankingImg">
+                        <img className="rImg" src={leaderboard} alt="" />
+                    </div>
+
                 </div>
-                <div className="rankingTitle">Top 100 Games</div>
+
             </div>
 
-            <div className='homepageBreak'></div>
-    
-            <DisplayReview GameData={topGames} />
-
-            <div className="expand" onClick={increaseWindow}>
-                <div className="expandImg">+ </div>
+            <div className="actualRanking">
+                <div className='homepageBreak'></div>
+                <DisplayReview GameData={topGames} />
             </div>
+
+
 
         </div>
     )

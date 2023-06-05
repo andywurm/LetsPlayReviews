@@ -22,9 +22,9 @@ const Home = () => {
                         <div className='centerText'>
 
                             <div className='Big'>
-                                <div className='bigText'>RANK</div>
-                                <div className='bigText'>REVIEW</div>
-                                <div className='bigText'>DISCOVER</div>
+                                <div className='bigText'>RANK, REVIEW,</div>
+                                {/* <div className='bigText'></div> */}
+                                <div className='bigText'>AND DISCOVER</div>
                             </div>
 
                             <div className='small'>
