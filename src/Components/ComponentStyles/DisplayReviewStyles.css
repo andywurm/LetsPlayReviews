@@ -36,7 +36,7 @@
     color: rgb(35, 35, 35);
     /* border: solid red 1px; */
     flex-direction: column;
-    flex-basis: 20%;
+    flex-basis: 25%;
     white-space:nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -46,6 +46,7 @@
     flex-direction: column;
     flex-basis: 10%;
     height: 70px;
+    min-width: 100px;
     width: 100px;
     margin-right: 2%;
     border: solid rgb(200, 200, 200) 1px;
@@ -55,6 +56,7 @@
 .DRrating{
     flex-direction: column;
     flex-basis: 10%;
+    text-align: right;
     /* border: solid red 1px; */
 }
 
@@ -62,7 +64,7 @@
     flex-direction: column;
     flex-basis: 15%;
     /* border: solid red 1px; */
-    text-align: center;
+    text-align: right;
 }
 
 .leaveReview{
@@ -72,7 +74,7 @@
     text-decoration: underline;
     width: fit-content;
     flex-basis: 20%;
-    text-align: center;
+    text-align: right;
     /* border: solid red 1px; */
 }
 
