@@ -11,10 +11,18 @@ const Games = () => {
 
     const [title, setTitle] = useState("ALL GAMES")
     const [games, setGames] = useState(gContext.getList)
-    const [displayList, setDisplayList] = useState<GameData[]>([])
     const [filters, setFilters] = useState<string[]>([])
 
-    console.log(filters)
+    useEffect(() => {
+
+        if(filters.length === 0){
+            setGames(gContext.getList)
+        }
+        else{
+            setGames(gContext.getList.filter(game => filters.includes(game.system) || filters.filter(x => game.tags.includes(x)).length > 0) )
+        }
+
+    },[filters])
 
     return (
         <div>

@@ -34,17 +34,13 @@ const DisplayConsoles = (props: IPropsDisplayConsoles) => {
     ]
     categories.sort()
 
-    const [set, setSet] = useState<string[]>([])
-
     function updateSearch(selected: string) {
-        if(set.includes(selected)){
-            setSet(set.filter(i => i !== selected))
+        if(props.filters.includes(selected)){
+            props.setFilters(props.filters.filter(i => i !== selected))
         }
         else{
-             props.setFilters([...props.filters, selected ])
-             setSet([...set, selected])
+             props.setFilters([...props.filters, selected])
         }
-        props.setFilters(set)
     }
 
     return (

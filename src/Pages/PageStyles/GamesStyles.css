@@ -1,7 +1,8 @@
 .SearchArea {
     display: flex;
     flex-direction: row;
-    margin: 3% 0;
+    margin: 3% auto;
+    width: 98%;
 }
 
 .br{
@@ -79,4 +80,5 @@
     flex-direction: column;
     flex-basis: 75%;
     padding-left: 2%;
+    margin: 0 auto;
 }
