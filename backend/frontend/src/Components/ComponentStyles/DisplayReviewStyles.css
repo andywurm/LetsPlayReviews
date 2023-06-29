@@ -1,0 +1,176 @@
+.DisplayReviewContainer{
+    margin: 2% 0;
+    padding-left: 1%;
+    text-align: left;
+    border-bottom: solid rgb(213, 213, 213) 1px;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: solid red 1px; */
+    width: 95%;
+    margin: 0 auto;
+}
+
+.DisplayReviewContainer:hover{
+    transform: scale(1.005);
+}
+
+.DisplayReviewRank{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(35, 35, 35);
+    /* width: 40px; */
+    /* border: solid red 1px; */
+    flex-direction: column;
+    flex-basis: 4%;
+}
+
+.DisplayReviewTitle{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-right: 2%;
+    color: rgb(35, 35, 35);
+    /* border: solid red 1px; */
+    flex-direction: column;
+    flex-basis: 25%;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.reviewImg{
+    flex-direction: column;
+    flex-basis: 10%;
+    height: 70px;
+    min-width: 100px;
+    width: 100px;
+    margin-right: 2%;
+    border: solid rgb(200, 200, 200) 1px;
+    /* border: solid red 1px; */
+}
+
+.DRrating{
+    flex-direction: column;
+    flex-basis: 10%;
+    text-align: right;
+    /* border: solid red 1px; */
+}
+
+.numOfReviews{
+    flex-direction: column;
+    flex-basis: 15%;
+    /* border: solid red 1px; */
+    text-align: right;
+}
+
+.leaveReview{
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    text-decoration: underline;
+    width: fit-content;
+    flex-basis: 20%;
+    text-align: right;
+    /* border: solid red 1px; */
+}
+
+.leaveReview:hover{
+    color: gray;
+}
+
+.DRsmall{
+    display: none;
+}
+
+.DRouterGame{
+    /* border:  solid red 1px; */
+    width: 70%;
+    margin: 10% auto;
+ }
+
+ .DRgameImg{
+    /* max-height: 200px; */
+    width: 100%;
+    object-fit: cover;
+    border: solid rgb(167, 167, 167) 1px;
+    display: flex;
+    justify-content: left;
+}
+
+.DRgInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* border:  solid red 1px; */
+    width: 100%;
+    margin: 15px 0;
+}
+
+.DRgRating{
+    flex-direction: column;
+    flex-basis: 40%;
+    text-align: right;
+    /* border:  solid red 1px; */
+}
+
+.DRgTitle{
+    flex-direction: column;
+    flex-basis: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.DRgDesc{
+    text-align: left;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    padding: 0 2px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    .DRgTitle{
+        font-size: 1.1em;
+    }
+    .DRouterGame{
+        /* border:  solid red 1px; */
+        width: 60%;
+     }
+     .numOfReviews{
+        display: none;
+     }
+     .DisplayReviewTitle{
+        flex-basis: 30%;
+     }
+}
+
+@media only screen and (max-width: 700px) {
+    .DRbig{
+        display: none;
+    }
+    .DRsmall{
+        display: contents;
+        border: solid red 1px;
+    }
+    .DRouterGame{
+        /* border:  solid red 1px; */
+        width: 90%;
+     }
+ 
+}
+
+
+

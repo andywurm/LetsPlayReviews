@@ -1,0 +1,60 @@
+.gameContain{
+    /* margin-top: 500px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 220px));
+    grid-gap: 1rem 1.5rem;
+    /* border:  solid red 1px; */
+}
+
+.outerGame{
+   /* border:  solid red 1px; */
+   width: 250px;;
+}
+
+.outerGame:hover{
+    transform: scale(1.01);
+}
+
+.gInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    /* border:  solid red 1px; */
+    width: 248px;
+    margin-top: 10px;
+}
+
+.gRating{
+    flex-direction: column;
+    flex-basis: 40%;
+    /* border:  solid red 1px; */
+}
+
+.gTitle{
+    flex-direction: column;
+    flex-basis: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-weight: 500;
+}
+
+.gameImg{
+    height: 160px;
+    width: 250px;
+    border: solid rgb(167, 167, 167) 1px;
+}
+
+.gDesc{
+    text-align: left;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+    width: 240px;
+    padding: 0 2px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}

@@ -1,0 +1,80 @@
+.rankingContainer{
+    width: 75%;
+    margin: 50px auto;
+}
+
+.actualRanking{
+    width: 75%;
+    margin: 0 auto
+}
+
+.rankingTitle{
+    font-size:2.5em;
+    font-weight: 600;
+    /* border: solid red 1px; */
+}
+
+.TitleSection{
+    /* border: solid red 1px; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.rankingText{
+    flex-direction: column;
+    flex-basis: 40%;
+    text-align: center;
+    width: 60%;
+    /* border: solid red 1px; */
+    line-height: 1.5;
+}
+
+.rankingSmlText{
+    font-size: 1.3em;
+    color: rgb(96, 96, 96);
+}
+
+.rankingImg{
+    flex-direction: column;
+    flex-basis: 60%;
+    display: flex;
+    justify-content: right;
+    /* border: solid red 1px; */
+}
+
+.rImg{
+    width: 100%;
+    object-fit: cover;
+    /* border: solid red 1px; */
+}
+
+@media only screen and (max-width: 1050px) {
+   
+    .rankingTitle{
+        font-size: 2em;
+        margin: 0 auto;
+    }
+
+    .rankingText{
+        flex-basis: 100%;
+    }
+    .rankingSmlText{
+        font-size: 1em;
+    }
+
+    .rankingImg{
+        flex-basis: 100%;
+    }
+
+    .TitleSection{
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .actualRanking{
+        width: 85%;
+      
+    }
+}
