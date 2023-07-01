@@ -9,7 +9,6 @@ import { GameContext } from '../Context/GameContext';
 
 const DisplayGame = () => {
 
-
     const [index, setIndex] = useState(0)
     let gContext = useContext(GameContext)
     const gData = gContext.data
@@ -37,7 +36,7 @@ const DisplayGame = () => {
                 <div className='GamePromo'>
 
                     <div className='bigImgContainer'>
-                        <img src={`../GameImg/${gData.imgs[index]}`} className="bigGameImg" alt="" />
+                        <img src={`/static/GameImg/${gData.imgs[index]}`} className="bigGameImg" alt="" />
                     </div>
 
                     <div className='smlImgContainer'>
@@ -46,7 +45,7 @@ const DisplayGame = () => {
 
                         {gData.imgs.map((item, idx) => {
                             return (
-                                <img src={`../GameImg/${item}`} className='smallGameImg' style={{ opacity: idx === index ? '1' : '50%' }} alt="" onClick={() => setIndex(idx)} />
+                                <img src={`/static/GameImg/${item}`} className='smallGameImg' style={{ opacity: idx === index ? '1' : '50%' }} alt="" onClick={() => setIndex(idx)} />
                             )
                         })}
 
@@ -81,8 +80,6 @@ const DisplayGame = () => {
 
                     </div>
 
-
-
                 </div>
 
             </div>
@@ -90,7 +87,6 @@ const DisplayGame = () => {
             <div className='ReviewsContainer'>
                 <ReviewContainer reviews={gData.reviews}/>
             </div>
-
 
         </div>
     )

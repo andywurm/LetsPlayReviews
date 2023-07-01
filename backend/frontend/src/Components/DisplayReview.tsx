@@ -31,7 +31,7 @@ const DisplayReview = (props: IPropsDisplayReview) => {
                         <div className="contentContainer">
 
                             <div className="DisplayReviewRank">{idx + 1}</div>
-                            <img src={`../GameImg/${game.imgs[0]}`} alt={game.title} className="reviewImg" />
+                            <img src={`static/GameImg/${game.imgs[0]}`} alt={game.title} className="reviewImg" />
                             <div className="DisplayReviewTitle">{game.title}</div>
                             <div className="DRrating"><DisplayRating rating={game.rating} size={"medium"} /></div>
                             <div className="numOfReviews"><b>{game.reviews.length}</b> Reviews</div>
@@ -52,7 +52,7 @@ const DisplayReview = (props: IPropsDisplayReview) => {
                         <div className="DRouterGame" onClick={() => goToDisplay(game)}>
 
                             <div>
-                                <img src={`../GameImg/${game.imgs[0]}`} alt="" className="DRgameImg" />
+                                <img src={`static/GameImg/${game.imgs[0]}`} alt="" className="DRgameImg" />
                             </div>
 
                             <div className="DRgInfo">
