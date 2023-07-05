@@ -3,8 +3,14 @@ import gbcolor from '../LPRimg/gbcolor.png'
 import game from '../LPRimg/gaming.png'
 import rated from '../LPRimg/rating.png'
 import comment from '../LPRimg/bubble-chat.png'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+
+    const navigate = useNavigate()
+    function handleExplore() {
+        navigate('/ranking')
+    }
 
     return (
         <div className='outerH'>
@@ -39,7 +45,7 @@ const Home = () => {
                             </div>
 
                             <div>
-                                <button className='btn'>Explore</button>
+                                <button className='btn' onClick={handleExplore}>Explore</button>
                             </div>
                         </div>
                     </div>

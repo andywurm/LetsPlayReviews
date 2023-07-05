@@ -70,16 +70,18 @@
     .searching{
         display: none;
     }
-    .searchContainer{
+    .inputSearchContainer{
         display: none !important;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .con{
-        /* border: solid red 1px; */
+    /* .con{
         margin: 0 auto;
         position: relative;
-        left: -15px;
+        left: -30%;
+    } */
+    .con{
+        display: none;
     }
 }

@@ -1,0 +1,19 @@
+
+.outerSearch{
+    margin: 1% auto;
+}
+
+.topSearch{
+    width: 85%;
+    margin: 3% auto;
+}
+
+.searchHeader{
+    font-size: 1.7em;
+    text-align: left;
+}
+
+.resultArea{
+    width: 85%;
+    margin: 3% auto;
+}

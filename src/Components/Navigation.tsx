@@ -88,7 +88,7 @@ const Navigation = () => {
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
               >
-                <MenuIcon />
+                <MenuIcon style={{fontSize:"1.1em"}} />
               </IconButton>
               <Menu
                 id="menu-appbar"
@@ -110,6 +110,16 @@ const Navigation = () => {
               >
                 <MenuItem>
                   <NavLink
+                    to="/"
+                    onClick={handleCloseNavMenu}
+                    className="MenuLinkStyles"
+                  >
+                    Home
+                  </NavLink>
+                </MenuItem>
+
+                <MenuItem>
+                  <NavLink
                     to="/games"
                     onClick={handleCloseNavMenu}
                     className="MenuLinkStyles"
@@ -128,15 +138,6 @@ const Navigation = () => {
                   </NavLink>
                 </MenuItem>
 
-                <MenuItem>
-                  <NavLink
-                    to="/login"
-                    onClick={handleCloseNavMenu}
-                    className="MenuLinkStyles"
-                  >
-                    Login
-                  </NavLink>
-                </MenuItem>
               </Menu>
             </Box>
 
@@ -186,9 +187,9 @@ const Navigation = () => {
               </NavLink>
             </Box>
 
-            <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{ flexGrow: 1}}>
               <Menu
-                sx={{ mt: "45px" }}
+                sx={{ mt: "45px"}}
                 id="menu-appbar"
                 anchorEl={anchorElUser}
                 anchorOrigin={{
