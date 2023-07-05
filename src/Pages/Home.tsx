@@ -1,19 +1,25 @@
 import './PageStyles/HomeStyles.css'
 import gbcolor from '../LPRimg/gbcolor.png'
 import game from '../LPRimg/gaming.png'
-import rate from '../LPRimg/rating.png'
+import rated from '../LPRimg/rating.png'
 import comment from '../LPRimg/bubble-chat.png'
 
 const Home = () => {
 
     return (
-        <div>
+        <div className='outerH'>
 
             <div className='landing'>
 
                 <div className='gameboy'>
                     <div className='gameboyContainer'>
                         <img src={gbcolor} alt='' className='gb' />
+                    </div>
+                </div>
+
+                <div className='gameboySml'>
+                    <div className='gbSmlContainer'>
+                        <img src={gbcolor} alt='' className='gbSml' />
                     </div>
                 </div>
 
@@ -59,7 +65,7 @@ const Home = () => {
 
                     <div className='rate'>
                         <div className='keepOver'>
-                            <img src={rate} alt='' className='explainIcon' />
+                            <img src={rated} alt='' className='explainIcon' />
                         </div>
                         <div className='hText'>
                             After completion, rate the game based on your experience.
@@ -77,7 +83,10 @@ const Home = () => {
 
                 </div>
 
-                <div className='homepageBreak'></div>
+                <div className='hmBreak'>
+                    <div className='homepageBreak'></div>
+                </div>
+                
 
             </div>
 
