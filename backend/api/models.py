@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date
 
 # Create your models here.
 class Tag(models.Model):
@@ -9,7 +10,7 @@ class Imgs(models.Model):
 
 class Review(models.Model):
     username = models.CharField(max_length=50)
-    date = models.CharField(max_length=50)
+    date = models.DateField(auto_now_add=True,default=date.today)
     userRating = models.DecimalField(default=0,max_digits=2, decimal_places=1)
     comment = models.CharField(max_length=1000)
 
