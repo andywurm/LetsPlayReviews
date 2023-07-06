@@ -71,12 +71,12 @@
 }
 
 .bigText {
-    font-size: 3.5em;
+    font-size: 3.4em;
     font-weight: 600;
 }
 
 .smallText {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: rgb(96, 96, 96);
     line-height: 1.3;
 }
@@ -157,7 +157,7 @@
 }
 
 .hText {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 400;
     padding: 5% 2%;
     color: rgb(56, 56, 56);
