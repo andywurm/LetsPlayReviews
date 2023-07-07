@@ -1,5 +1,4 @@
 import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
-import { useState } from "react";
 
 interface IPropsDisplayConsoles {
     filters: string[]

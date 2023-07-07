@@ -1,6 +1,7 @@
 
 .outerSearch{
     margin: 1% auto;
+    min-height: 82vh;
 }
 
 .topSearch{
@@ -16,4 +17,10 @@
 .resultArea{
     width: 85%;
     margin: 3% auto;
+}
+
+.notFound{
+    color: gray;
+    text-align: left;
+    font-size: 1.1em;
 }

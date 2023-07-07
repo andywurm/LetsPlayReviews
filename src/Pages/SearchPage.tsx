@@ -5,18 +5,20 @@ import GameCards from "../Components/GameCards";
 import { GameData } from "../Data/GameData";
 
 const SearchPage = () => {
-
   let sContext = useContext(GameContext);
-  const [gamesFound, setGamesFound] = useState<GameData[]>([])
+  const [gamesFound, setGamesFound] = useState<GameData[]>([]);
 
   useEffect(() => {
-    setGamesFound(sContext.getList.filter(game => game.title.toLowerCase().includes(sContext.searched.toLowerCase())))
-  },[sContext.searched, gamesFound, sContext.getList])
+    setGamesFound(
+      sContext.getList.filter((game) =>
+        game.title.toLowerCase().includes(sContext.searched.toLowerCase())
+      )
+    );
+  }, [sContext.searched, gamesFound, sContext.getList]);
 
-  console.log(gamesFound)
+  console.log(gamesFound);
   return (
     <div className="outerSearch">
-
       <div className="homepageBreak"></div>
 
       <div className="topSearch">
@@ -26,9 +28,13 @@ const SearchPage = () => {
       </div>
 
       <div className="resultArea">
-        <GameCards gameList={gamesFound}/>
+        {gamesFound.length === 0 ? (
+          <div className="notFound">No Games Found</div>
+        ) : (
+          <GameCards gameList={gamesFound} />
+        )}
       </div>
-
+      
     </div>
   );
 };
