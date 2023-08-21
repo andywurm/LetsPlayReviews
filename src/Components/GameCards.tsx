@@ -26,7 +26,7 @@ const GameCards = (props: IPropsGameCards) => {
                 return (
                     <div className="outerGame" onClick={() => goToDisplay(game)}>
 
-                        <div>
+                        <div className="cardHover">
                             <img src={`../GameImg/${game.imgs[0]}`} alt="" className="gameImg" />
                         </div>
 

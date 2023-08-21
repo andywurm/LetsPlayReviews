@@ -7,6 +7,7 @@ import Login from './Pages/Login';
 import Navigation from './Components/Navigation';
 import Footer from './Components/Footer';
 import DisplayGame from './Pages/DisplayGame';
+import SearchPage from './Pages/SearchPage';
 import { GameProvider } from './Context/GameContext'
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/games" element={<Games />} />
-            <Route path="/ranking" element={<Ranking />} />
+            <Route path="/game-list" element={<Games />} />
+            <Route path="/ranking-list" element={<Ranking />} />
             <Route path="/login" element={<Login />} />
             <Route path="/displaygame" element={<DisplayGame />} />
+            <Route path="/search-page" element={<SearchPage />} />
           </Routes>
           <Footer />
         </BrowserRouter>

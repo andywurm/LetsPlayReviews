@@ -25,8 +25,7 @@ const Games = () => {
     },[filters])
 
     return (
-        <div>
-            <div className="homepageBreak br"></div>
+        <div style={{margin: '0 auto'}}>
             <div className="SearchArea">
 
                 <div className="GamingOptions">
@@ -46,7 +45,7 @@ const Games = () => {
                         <div className="upperText">{title}</div>
                     </div>
 
-                    <div>
+                    <div style={{maxWidth: '1500px'}}>
                         <GameCards gameList={games} />
                     </div>
 

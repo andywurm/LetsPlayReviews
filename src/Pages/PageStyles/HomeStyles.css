@@ -1,44 +1,160 @@
+
 .landing {
-    width: 80%;
+    width: 90%;
     margin: 4% auto;
     /* border: solid red 1px; */
+}
+
+.homepageBreak {
+    height: 1px;
+    background-color: rgb(181, 181, 181);
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.homeImgContainer{
+    width: 100%;
+    height: 47vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.70);
+    z-index: -1;
+}
+
+.welcomeText{
+    position: absolute;
+}
+
+.bigTitle{
+    font-size: 4em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(33, 33, 33);
+    letter-spacing: 1px;
+}
+
+.littleTitle{
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 1% 0;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(48, 48, 48);
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+
+.welcomeSpace{
     display: flex;
     flex-direction: row;
-    height: 70vh;
-}
-
-.gameboy {
-    flex-direction: column;
-    flex-basis: 50%;
-    height: 100%;
-    width: 100%;
-    /* border: solid blue 1px; */
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    left: -7%;
-}
-
-.gameboyContainer {
-    height: 85%;
-    padding: 0 4%;
-    width: fit-content;
+    flex-wrap: wrap-reverse;
+    height: 47vh;
     /* border: solid red 1px; */
-    margin-top: auto;
-    margin-bottom: auto;
-    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.welcomeTitles{
+    flex-basis: 48%;
+    /* border: solid red 1px; */
     display: flex;
-    background-image: linear-gradient(to bottom right, rgb(242, 213, 245), rgb(228, 236, 244));
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7%;
+}
+
+.insideWelcomeTitles{
+    width: fit-content;
+}
+
+.bigText{
+    font-size: 4.1em;
+    font-weight: 600;
+    color: rgb(23, 23, 23);
+    letter-spacing: 1px;
+}
+
+.littleText{
+    font-size: 1.5em;
+    margin: 3% 0 7% 0;
+    color: rgb(56, 56, 56);
+    /* border: solid red 1px; */
+    width: 100%;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.now{
+    font-style: italic;
+    font-weight: 500;
+}
+
+.homeBtns{
+    display: flex;
+}
+
+.homeBtnFilled{
+    background-color: rgb(169, 203, 237);
+    color: rgb(71, 71, 71);
+    padding: 3% 7%;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 2%;
+}
+
+.homeBtnUnfilled{
+    color: rgb(71, 71, 71);
+    background-color: transparent;
+    padding: 3% 7%;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: solid rgb(169, 203, 237) 3px;
     border-radius: 3px;
 }
 
-.gb {
-    height: inherit;
-    width: fit-content;
-    position: relative;
-    top: -10px;
+.homeBtnFilled:hover, .homeBtnUnfilled:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.welcomeImg{
     /* border: solid red 1px; */
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.insideImg{
+    height: 95%;
+    width: fit-content;
+    padding: 0 15%;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, rgb(242, 213, 245), rgb(228, 236, 244));
+    /* border: solid red 1px; */
+}
+
+.gb{
+    height: inherit;
+    object-fit: cover;
     animation: floating 3s ease-in-out infinite;
+}
+
+.hmBreak{
+    margin: 3% 0;
 }
 
 @keyframes floating {
@@ -55,208 +171,91 @@
     }
 }
 
-.HomeText {
-    flex-direction: column;
-    flex-basis: 50%;
-    text-align: left;
-    /* border: solid red 1px; */
-    height: 100%;
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 1100px) {
+
+        .welcomeTitles{
+            flex-basis: 54%;
+            display: flex;
+            position: relative;
+            top: -7%;
+            justify-content: center;
+        }
+        .homeBtnFilled{
+            font-size: 1.05em;
+            font-weight: 500;
+        }
+        .bigText{
+            font-size: 3em;
+        }
+        .littleText{
+            font-size: 1.2em;
+        }
+        .homeBtnUnfilled{
+            font-size: 1.05em;
+            font-weight: 500;
+            border: solid rgb(169, 203, 237) 2px;
+        }
+        .welcomeImg{
+            flex-basis: 45%;
+        }
+        .insideImg{
+            height: 80%;
+            padding: 5%;
+            /* border: solid red 1px; */
+        }
+        .gb{
+            position: relative;
+            top: 7%;
+        }
+  
 }
 
-.bigText {
-    font-size: 3.5em;
-    font-weight: 600;
-}
+@media only screen and (max-width: 700px) {
 
-.smallText {
-    font-size: 1.5em;
-    color: rgb(96, 96, 96);
-    line-height: 1.3;
-}
-
-.small {
-    padding: 20px 0;
-}
-
-.btn {
-    color: rgb(71, 71, 71);
-    font-size: 1.1em;
-    background-color: rgb(220, 237, 255);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 3px;
-}
-
-.btn:hover {
-    transform: scale(1.02);
-    color: rgb(158, 195, 234)
-}
-
-.HomepageContainer {
-    width: 75%;
-    max-width: 1000px;
-    margin: 4% auto;
-    height: fit-content;
-    margin-bottom: 20px;
-    /* border: solid red 1px; */
-}
-
-.homepageBreak {
-    height: 2px;
-    background-color: rgb(228, 228, 228);
-    width: 99%;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.dr {
-    animation: fadeIn 7s ease-in-out infinite;
-}
-
-.explainIcon {
-    height: 75px;
-    width: 75px;
-    margin: 0 auto;
-}
-
-.explain {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 5% 0;
-}
-
-.play,
-.comment,
-.rate {
-    flex-direction: column;
-    flex-basis: 33%;
-}
-
-.rate {
-    border-left: solid rgb(205, 205, 205) 1px;
-    border-right: solid rgb(205, 205, 205) 1px;
-}
-
-.keepOver {
-    /* border: solid red 1px; */
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.6em;
-    font-weight: 500;
-    color: rgb(82, 82, 82);
-}
-
-.hText {
-    font-size: 1.2em;
-    font-weight: 400;
-    padding: 5% 2%;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    1% {
-        opacity: .25;
-    }
-
-    2% {
-        opacity: .5;
-    }
-
-    3.5% {
-        opacity: .75;
-    }
-
-    5% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-
-    .sml {
-        display: none;
-    }
-
-    .dr {
-        animation: none;
-    }
-
-    .gameboyContainer {
-        /* border: solid red 1px; */
-        height: 85%;
-        width: 80%;
-        justify-content: center;
-        background-image: none;
-    }
-
-    .landing {
-        height: 40vh;
-    }
-
-    .smallText {
-        font-size: 1.3em;
-    }
-
-    .bigText {
-        font-size: 2.3em;
-    }
-
-    .gb {
-        background-image: linear-gradient(to bottom right, rgb(242, 213, 245), rgb(228, 236, 244));
-    }
-
-    .play,
-    .comment,
-    .rate {
-        flex-basis: 100%;
-    }
-
-    .rate {
-        border-top: solid rgb(205, 205, 205) 1px;
-        border-bottom: solid rgb(205, 205, 205) 1px;
-        border-left: none;
-        border-right: none;
-    }
-
-}
-
-@media only screen and (max-width: 650px) {
-    .gameboy {
-        display: none;
-    }
-
-    .HomeText {
-        flex-basis: 100%;
-        /* border: solid red 1px; */
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .landing {
-        display: inline-block;
-        flex-direction: none;
+    .welcomeSpace{
         height: fit-content;
-        margin-top: 10%;
+    }
+    .welcomeTitles{
+        flex-basis: 100%;
+        /* border: solid red 1px; */
+        top: 0;
+    }
+    .insideWelcomeTitles{
+        width: 93%;
+    }
+    .bigText{
+        font-size: 2.5em;
+        text-align: left;
+    }
+    .littleText, .homeBtnFilled, .homeBtnUnfilled{
+        font-size: 1em;
+    }
+    .homeBtns{
+        display: flex;
+        flex-direction: row;
     }
 
-    .smallText {
-        font-size: 1.3em;
+    .welcomeImg{
+        flex-basis: 100%;
     }
-
-    .bigText {
-        font-size: 3.3em;
+    .homeBtnFilled{
+        flex-basis: 50%;
+    }
+    .homeBtnUnfilled{
+        flex-basis: 50%;
+    }
+    .insideImg{
+        height: 10%;
+        padding: 5%;
+        width: 85vw;
+        box-sizing: border-box;
+        /* border: solid red 1px; */
+    }
+    .gb{
+        position: relative;
+        top: 0;
+        height: 250px;
+        /* border: solid red 1px; */
     }
 
 }

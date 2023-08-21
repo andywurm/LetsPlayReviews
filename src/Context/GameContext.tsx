@@ -14,7 +14,9 @@ const GameContext = createContext<GameContextType>({
     },
     setter: () => { },
     getList: [],
-    setList: () => []
+    setList: () => [],
+    searched: "",
+    setSearched: () => {}
 })
 
 interface GameContextType {
@@ -22,6 +24,8 @@ interface GameContextType {
     setter: React.Dispatch<React.SetStateAction<GameData>>
     getList: GameData[]
     setList: React.Dispatch<React.SetStateAction<GameData[]>>
+    searched: string
+    setSearched: React.Dispatch<React.SetStateAction<string>>
 }
 
 interface IPropsGameProvider {
@@ -44,9 +48,10 @@ const GameProvider = (props: IPropsGameProvider) => {
     );
 
     let [gameList, setList] = useState(allGameData)
+    let [searched, setSearched] = useState("")
 
     return (
-        <GameContext.Provider value={{ data: gameClicked, setter: setGameClicked, getList: gameList, setList: setList }}>
+        <GameContext.Provider value={{ data: gameClicked, setter: setGameClicked, getList: gameList, setList: setList, searched: searched, setSearched: setSearched }}>
             {props.children}
         </GameContext.Provider>
     )
