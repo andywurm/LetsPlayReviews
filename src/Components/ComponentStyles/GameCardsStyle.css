@@ -14,7 +14,9 @@
 .outerGame:hover{
     transform: scale(1.01);
 }
-
+.cardHover:hover{
+    filter: brightness(.85);
+}
 .gInfo{
     display: flex;
     flex-direction: row;

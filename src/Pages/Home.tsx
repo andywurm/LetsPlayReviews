@@ -1,101 +1,63 @@
 import './PageStyles/HomeStyles.css'
 import gbcolor from '../LPRimg/gbcolor.png'
-import game from '../LPRimg/gaming.png'
-import rated from '../LPRimg/rating.png'
-import comment from '../LPRimg/bubble-chat.png'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
 
     const navigate = useNavigate()
-    function handleExplore() {
-        navigate('/ranking')
+
+    const goTo = (place: string) => {
+        if(place === "Explore"){
+            navigate('/game-list')
+        }
+        else{
+            // navigate('/search')
+        }
     }
 
     return (
-        <div className='outerH'>
+        <div>
+            <div className='outerH'>
 
-            <div className='landing'>
-
-                <div className='gameboy'>
-                    <div className='gameboyContainer'>
-                        <img src={gbcolor} alt='' className='gb' />
+                {/* <div className='homeImgContainer'>
+                    <div className='welcomeText'>
+                        <div className='bigTitle'>Rank. Review. Discover.</div>
+                        <div className='littleTitle'>Keep up with the gaming community. Now all in one place.</div>
                     </div>
-                </div>
+                    <img src={homes} className='homeImg' alt="" />
+                </div> */}
 
-                <div className='gameboySml'>
-                    <div className='gbSmlContainer'>
-                        <img src={gbcolor} alt='' className='gbSml' />
-                    </div>
-                </div>
+                <div className='landing'>
 
-                <div>
-                    <div className='HomeText'>
-                        <div className='centerText'>
-
-                            <div className='Big'>
+                    <div className='welcomeSpace'>
+                        <div className='welcomeTitles'>
+                            <div className='insideWelcomeTitles'>
                                 <div className='bigText'>RANK, REVIEW,</div>
-                                {/* <div className='bigText'></div> */}
-                                <div className='bigText'>AND DISCOVER</div>
-                            </div>
-
-                            <div className='small'>
-                                <div className='smallText'>Keep up with the gaming community.</div>
-                                <div className='smallText'>Now all in one place.</div>
-                            </div>
-
-                            <div>
-                                <button className='btn' onClick={handleExplore}>Explore</button>
+                                <div className='bigText'>and DISCOVER.</div>
+                                <div className='littleText'>
+                                    <div className='littleText2'>Keep up with the gaming community.</div>
+                                    <div className='littleText2 now'>Now all in one place.</div>
+                                </div>
+                                <div className='homeBtns'>
+                                    <button className='homeBtnFilled' onClick={()=>goTo("Explore")}>Explore</button>
+                                    <button className='homeBtnUnfilled' onClick={()=>goTo("Search")}>Search</button>
+                                </div>
                             </div>
                         </div>
+                        <div className='welcomeImg'>
+                            <div className='insideImg'>
+                                <img src={gbcolor} className='gb' alt='' />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='hmBreak'>
+                        <div className='homepageBreak'></div>
                     </div>
 
                 </div>
 
             </div>
-
-            <div className="HomepageContainer">
-
-                <div className='homepageBreak'></div>
-
-                <div className='explain'>
-
-                    <div className='play'>
-                        <div className='keepOver'>
-                            <img src={game} alt='' className='explainIcon' />
-                        </div>
-                        <div className='hText'>
-                            The first step is to play a game of your choosing!
-                        </div>
-                    </div>
-
-                    <div className='rate'>
-                        <div className='keepOver'>
-                            <img src={rated} alt='' className='explainIcon' />
-                        </div>
-                        <div className='hText'>
-                            After completion, rate the game based on your experience.
-                        </div>
-                    </div>
-
-                    <div className='comment'>
-                        <div className='keepOver'>
-                            <img src={comment} alt='' className='explainIcon' />
-                        </div>
-                        <div className='hText'>
-                            Write a comment to further express your opinions!
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className='hmBreak'>
-                    <div className='homepageBreak'></div>
-                </div>
-                
-
-            </div>
-
         </div>
 
     )

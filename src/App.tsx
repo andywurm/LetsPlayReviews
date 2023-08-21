@@ -19,11 +19,11 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/games" element={<Games />} />
-            <Route path="/ranking" element={<Ranking />} />
+            <Route path="/game-list" element={<Games />} />
+            <Route path="/ranking-list" element={<Ranking />} />
             <Route path="/login" element={<Login />} />
             <Route path="/displaygame" element={<DisplayGame />} />
-            <Route path="/searchpage" element={<SearchPage />} />
+            <Route path="/search-page" element={<SearchPage />} />
           </Routes>
           <Footer />
         </BrowserRouter>
