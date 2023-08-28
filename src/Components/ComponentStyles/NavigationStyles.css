@@ -1,5 +1,5 @@
 .logo{
-    height: 45px;
+    height: 40px;
 }
 
 .loginBtn{
@@ -8,7 +8,7 @@
     background-color: transparent;
     border: solid gray 1px;
     border-radius: 200px;
-    font-size: 1em;
+    font-size: .9em;
     margin-right: 5%;
     letter-spacing: 1px;
 }
@@ -41,7 +41,7 @@
         background-color: transparent;
         border: solid gray 1px;
         border-radius: 2px;
-        font-size: 1em;
+        font-size: .9em;
         margin-right: 5%;
         letter-spacing: 1px;
     }
