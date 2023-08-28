@@ -139,7 +139,7 @@ const Navigation = () => {
                       key={page}
                       onClick={() => window.location.href = `/game-list`}
                       className="fullLinks"
-                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '1.05em', margin: '0 .7%' }}
+                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '.9em', margin: '0 .7%' }}
                     >
                       {page}
                     </Button>
@@ -149,7 +149,7 @@ const Navigation = () => {
                       key={page}
                       onClick={() => window.location.href = `/ranking-list`}
                       className="fullLinks"
-                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '1.05em', margin: '0 .7%' }}
+                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '.9em', margin: '0 .7%' }}
                     >
                       {page}
                     </Button>
@@ -159,7 +159,7 @@ const Navigation = () => {
                       key={page}
                       // onClick={() => window.location.href = `/search`}
                       className="fullLinks"
-                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '1.05em', margin: '0 .7%' }}
+                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '.9em', margin: '0 .7%' }}
                     >
                       {page}
                     </Button>
@@ -169,7 +169,7 @@ const Navigation = () => {
                       key={page}
                       onClick={handleCloseNavMenu}
                       className="fullLinks"
-                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '1.05em', margin: '0 .7%' }}
+                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '.9em', margin: '0 .7%' }}
                     >
                       {page}
                     </Button>
