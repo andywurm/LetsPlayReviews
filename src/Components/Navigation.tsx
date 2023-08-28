@@ -8,14 +8,10 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import SearchIcon from "@mui/icons-material/Search";
 import controller from "../LPRimg/3743230.png";
 import Button from "@mui/material/Button";
-import { NavLink } from "react-router-dom";
 import "./ComponentStyles/NavigationStyles.css";
-import { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import { GameContext } from "../Context/GameContext";
+// import { useState, useContext } from "react";
 
 const Navigation = () => {
   // const navigate = useNavigate();
@@ -139,7 +135,7 @@ const Navigation = () => {
                       key={page}
                       onClick={() => window.location.href = `/game-list`}
                       className="fullLinks"
-                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '.9em', margin: '0 .7%' }}
+                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '1.05em', margin: '0 .7%' }}
                     >
                       {page}
                     </Button>
@@ -149,7 +145,7 @@ const Navigation = () => {
                       key={page}
                       onClick={() => window.location.href = `/ranking-list`}
                       className="fullLinks"
-                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '.9em', margin: '0 .7%' }}
+                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '1.05em', margin: '0 .7%' }}
                     >
                       {page}
                     </Button>
@@ -159,7 +155,7 @@ const Navigation = () => {
                       key={page}
                       // onClick={() => window.location.href = `/search`}
                       className="fullLinks"
-                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '.9em', margin: '0 .7%' }}
+                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '1.05em', margin: '0 .7%' }}
                     >
                       {page}
                     </Button>
@@ -169,7 +165,7 @@ const Navigation = () => {
                       key={page}
                       onClick={handleCloseNavMenu}
                       className="fullLinks"
-                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '.9em', margin: '0 .7%' }}
+                      sx={{ my: 2, color: 'black', display: 'block', textTransform: "none", fontSize: '1.05em', margin: '0 .7%' }}
                     >
                       {page}
                     </Button>
